@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.documentationSidebar.category.Controls": {
+    "message": "Controls",
+    "description": "The label for category Controls in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Platform-specific issues": {
+    "message": "Platform-specific issues",
+    "description": "The label for category Platform-specific issues in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category Tools in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.UI development": {
+    "message": "UI development",
+    "description": "The label for category UI development in sidebar documentationSidebar"
+  }
+}

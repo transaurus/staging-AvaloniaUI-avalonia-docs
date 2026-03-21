@@ -1,0 +1,50 @@
+{
+  "logo.alt": {
+    "message": "Avalonia Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guides": {
+    "message": "Guides",
+    "description": "Navbar item with label Guides"
+  },
+  "item.label.Controls": {
+    "message": "Controls",
+    "description": "Navbar item with label Controls"
+  },
+  "item.label.Tools": {
+    "message": "Tools",
+    "description": "Navbar item with label Tools"
+  },
+  "item.label.APIs": {
+    "message": "APIs",
+    "description": "Navbar item with label APIs"
+  },
+  "item.label.More": {
+    "message": "More",
+    "description": "Navbar item with label More"
+  },
+  "item.label.Avalonia XPF": {
+    "message": "Avalonia XPF",
+    "description": "Navbar item with label Avalonia XPF"
+  },
+  "item.label.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "Navbar item with label Troubleshooting"
+  },
+  "item.label.Enhanced Support": {
+    "message": "Enhanced Support",
+    "description": "Navbar item with label Enhanced Support"
+  },
+  "item.label.Professional Services": {
+    "message": "Professional Services",
+    "description": "Navbar item with label Professional Services"
+  },
+  "item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "Navbar item with label GitHub Discussions"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.documentationSidebar.category.Migration": {
+    "message": "Migration",
+    "description": "The label for category Migration in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Third-Party Libraries": {
+    "message": "Third-Party Libraries",
+    "description": "The label for category Third-Party Libraries in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Interop": {
+    "message": "Interop",
+    "description": "The label for category Interop in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Platforms": {
+    "message": "Platforms",
+    "description": "The label for category Platforms in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Testing": {
+    "message": "Testing",
+    "description": "The label for category Testing in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Deployment": {
+    "message": "Deployment",
+    "description": "The label for category Deployment in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Version Info": {
+    "message": "Version Info",
+    "description": "The label for category Version Info in sidebar documentationSidebar"
+  }
+}

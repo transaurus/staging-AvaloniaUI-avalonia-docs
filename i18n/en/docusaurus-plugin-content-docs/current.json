@@ -1,0 +1,130 @@
+{
+  "version.label": {
+    "message": "11.0.x",
+    "description": "The label for version current"
+  },
+  "sidebar.documentationSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Starter Tutorial": {
+    "message": "Starter Tutorial",
+    "description": "The label for category Starter Tutorial in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Fundamentals": {
+    "message": "Fundamentals",
+    "description": "The label for category Fundamentals in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.XAML Reference": {
+    "message": "XAML Reference",
+    "description": "The label for category XAML Reference in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Layout": {
+    "message": "Layout",
+    "description": "The label for category Layout in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Styling": {
+    "message": "Styling",
+    "description": "The label for category Styling in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Data Binding": {
+    "message": "Data Binding",
+    "description": "The label for category Data Binding in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Data Templates": {
+    "message": "Data Templates",
+    "description": "The label for category Data Templates in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Property System": {
+    "message": "Property System",
+    "description": "The label for category Property System in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Events": {
+    "message": "Events",
+    "description": "The label for category Events in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Input & Interaction": {
+    "message": "Input & Interaction",
+    "description": "The label for category Input & Interaction in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Gestures": {
+    "message": "Gestures",
+    "description": "The label for category Gestures in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Graphics & Animation": {
+    "message": "Graphics & Animation",
+    "description": "The label for category Graphics & Animation in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Custom Controls": {
+    "message": "Custom Controls",
+    "description": "The label for category Custom Controls in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Services": {
+    "message": "Services",
+    "description": "The label for category Services in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Storage": {
+    "message": "Storage",
+    "description": "The label for category Storage in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.App Development": {
+    "message": "App Development",
+    "description": "The label for category App Development in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Resources": {
+    "message": "Resources",
+    "description": "The label for category Resources in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Platform Integration": {
+    "message": "Platform Integration",
+    "description": "The label for category Platform Integration in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Embedded Linux": {
+    "message": "Embedded Linux",
+    "description": "The label for category Embedded Linux in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Android": {
+    "message": "Android",
+    "description": "The label for category Android in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Testing": {
+    "message": "Testing",
+    "description": "The label for category Testing in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Headless Testing": {
+    "message": "Headless Testing",
+    "description": "The label for category Headless Testing in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Deployment": {
+    "message": "Deployment",
+    "description": "The label for category Deployment in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Migration": {
+    "message": "Migration",
+    "description": "The label for category Migration in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.WPF": {
+    "message": "WPF",
+    "description": "The label for category WPF in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.How-To Guides": {
+    "message": "How-To Guides",
+    "description": "The label for category How-To Guides in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Samples & Tutorials": {
+    "message": "Samples & Tutorials",
+    "description": "The label for category Samples & Tutorials in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.link.Starter Tutorial": {
+    "message": "Starter Tutorial",
+    "description": "The label for link Starter Tutorial in sidebar documentationSidebar, linking to /docs/get-started/starter-tutorial"
+  },
+  "sidebar.documentationSidebar.link.ToDo List App": {
+    "message": "ToDo List App",
+    "description": "The label for link ToDo List App in sidebar documentationSidebar, linking to https://github.com/AvaloniaUI/Avalonia.Samples/tree/main/src/Avalonia.Samples/CompleteApps/SimpleToDoList"
+  },
+  "sidebar.documentationSidebar.link.Music Store App": {
+    "message": "Music Store App",
+    "description": "The label for link Music Store App in sidebar documentationSidebar, linking to https://github.com/AvaloniaUI/Avalonia.Samples/tree/main/src/Avalonia.Samples/CompleteApps/Avalonia.MusicStore"
+  }
+}

@@ -1,0 +1,52 @@
+---
+id: index
+title: Getting started
+description: Get started with Avalonia, the cross-platform .NET UI framework. Install the SDK, set up your IDE, and create your first project.
+doc-type: overview
+---
+
+import DocsCard from '@site/src/components/global/DocsCard';
+import DocsCards from '@site/src/components/global/DocsCards';
+
+<p><small>{frontMatter.description}</small></p>
+<br/>
+
+This section walks you through everything you need to go from zero to a running Avalonia application. Follow the guides in order, or jump to the one you need.
+
+<DocsCards>
+  <DocsCard header="Install Avalonia" href="/docs/get-started/install-avalonia">
+    <p>Install the .NET SDK and Avalonia project templates.</p>
+  </DocsCard>
+  <DocsCard header="Set Up Your IDE" href="/docs/get-started/set-up-your-ide">
+    <p>Configure JetBrains Rider, Visual Studio, or VS Code for Avalonia development.</p>
+  </DocsCard>
+  <DocsCard header="Create Your First Project" href="/docs/get-started/create-your-first-project">
+    <p>Create an Avalonia app from a template and run it.</p>
+  </DocsCard>
+  <DocsCard header="Starter Tutorial" href="/docs/get-started/starter-tutorial">
+    <p>Build a temperature converter app and learn core Avalonia concepts.</p>
+  </DocsCard>
+</DocsCards>
+
+## What is Avalonia?
+
+Avalonia is an open-source, cross-platform UI framework for .NET. It uses its own rendering engine to draw controls, so your app looks and behaves the same on every platform. Write your UI once in C# or F# with XAML, and deploy to Windows, macOS, Linux, iOS, Android, and WebAssembly.
+
+If you have experience with WPF or UWP, Avalonia's XAML and API will feel familiar. If you are new to XAML-based frameworks, the [starter tutorial](starter-tutorial/index.mdx) is the best place to begin.
+
+## Already have .NET and an IDE?
+
+If you already have .NET 8+ and your IDE configured, you can skip straight to creating a project:
+
+```bash
+dotnet new install Avalonia.Templates
+dotnet new avalonia.mvvm -o MyApp
+cd MyApp
+dotnet run
+```
+
+## Coming from WPF?
+
+Avalonia's API is intentionally close to WPF, but there are important differences in styling, templates, and the property system. See the [WPF migration guide](../migration/wpf/index.md) for a section-by-section comparison.
+
+If you need to run an existing WPF application cross-platform without rewriting it, [Avalonia XPF](/xpf) provides binary-compatible WPF support on top of Avalonia's rendering engine.

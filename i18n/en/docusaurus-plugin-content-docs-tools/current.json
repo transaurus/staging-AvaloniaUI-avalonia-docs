@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.documentationSidebar.category.IDE": {
+    "message": "IDE",
+    "description": "The label for category IDE in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Visual Studio Code": {
+    "message": "Visual Studio Code",
+    "description": "The label for category Visual Studio Code in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Dev Tools": {
+    "message": "Dev Tools",
+    "description": "The label for category Dev Tools in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Tool reference": {
+    "message": "Tool reference",
+    "description": "The label for category Tool reference in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Parcel": {
+    "message": "Parcel",
+    "description": "The label for category Parcel in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.AI Tools": {
+    "message": "AI Tools",
+    "description": "The label for category AI Tools in sidebar documentationSidebar"
+  }
+}

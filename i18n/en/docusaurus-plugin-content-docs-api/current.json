@@ -1,0 +1,618 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.apiSidebar.category.Avalonia": {
+    "message": "Avalonia",
+    "description": "The label for category Avalonia in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Animation": {
+    "message": "Avalonia.Animation",
+    "description": "The label for category Avalonia.Animation in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Animation.Easings": {
+    "message": "Avalonia.Animation.Easings",
+    "description": "The label for category Avalonia.Animation.Easings in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Automation": {
+    "message": "Avalonia.Automation",
+    "description": "The label for category Avalonia.Automation in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Automation.Peers": {
+    "message": "Avalonia.Automation.Peers",
+    "description": "The label for category Avalonia.Automation.Peers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Automation.Provider": {
+    "message": "Avalonia.Automation.Provider",
+    "description": "The label for category Avalonia.Automation.Provider in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Collections": {
+    "message": "Avalonia.Collections",
+    "description": "The label for category Avalonia.Collections in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Collections.Pooled": {
+    "message": "Avalonia.Collections.Pooled",
+    "description": "The label for category Avalonia.Collections.Pooled in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls": {
+    "message": "Avalonia.Controls",
+    "description": "The label for category Avalonia.Controls in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.ApplicationLifetimes": {
+    "message": "Avalonia.Controls.ApplicationLifetimes",
+    "description": "The label for category Avalonia.Controls.ApplicationLifetimes in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Automation.Peers": {
+    "message": "Avalonia.Controls.Automation.Peers",
+    "description": "The label for category Avalonia.Controls.Automation.Peers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Chrome": {
+    "message": "Avalonia.Controls.Chrome",
+    "description": "The label for category Avalonia.Controls.Chrome in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Converters": {
+    "message": "Avalonia.Controls.Converters",
+    "description": "The label for category Avalonia.Controls.Converters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Diagnostics": {
+    "message": "Avalonia.Controls.Diagnostics",
+    "description": "The label for category Avalonia.Controls.Diagnostics in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Documents": {
+    "message": "Avalonia.Controls.Documents",
+    "description": "The label for category Avalonia.Controls.Documents in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Embedding": {
+    "message": "Avalonia.Controls.Embedding",
+    "description": "The label for category Avalonia.Controls.Embedding in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Embedding.Offscreen": {
+    "message": "Avalonia.Controls.Embedding.Offscreen",
+    "description": "The label for category Avalonia.Controls.Embedding.Offscreen in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Generators": {
+    "message": "Avalonia.Controls.Generators",
+    "description": "The label for category Avalonia.Controls.Generators in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Metadata": {
+    "message": "Avalonia.Controls.Metadata",
+    "description": "The label for category Avalonia.Controls.Metadata in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Mixins": {
+    "message": "Avalonia.Controls.Mixins",
+    "description": "The label for category Avalonia.Controls.Mixins in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Notifications": {
+    "message": "Avalonia.Controls.Notifications",
+    "description": "The label for category Avalonia.Controls.Notifications in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Platform": {
+    "message": "Avalonia.Controls.Platform",
+    "description": "The label for category Avalonia.Controls.Platform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Presenters": {
+    "message": "Avalonia.Controls.Presenters",
+    "description": "The label for category Avalonia.Controls.Presenters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Primitives": {
+    "message": "Avalonia.Controls.Primitives",
+    "description": "The label for category Avalonia.Controls.Primitives in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Primitives.PopupPositioning": {
+    "message": "Avalonia.Controls.Primitives.PopupPositioning",
+    "description": "The label for category Avalonia.Controls.Primitives.PopupPositioning in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Remote": {
+    "message": "Avalonia.Controls.Remote",
+    "description": "The label for category Avalonia.Controls.Remote in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Selection": {
+    "message": "Avalonia.Controls.Selection",
+    "description": "The label for category Avalonia.Controls.Selection in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Shapes": {
+    "message": "Avalonia.Controls.Shapes",
+    "description": "The label for category Avalonia.Controls.Shapes in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Templates": {
+    "message": "Avalonia.Controls.Templates",
+    "description": "The label for category Avalonia.Controls.Templates in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Utils": {
+    "message": "Avalonia.Controls.Utils",
+    "description": "The label for category Avalonia.Controls.Utils in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Data": {
+    "message": "Avalonia.Data",
+    "description": "The label for category Avalonia.Data in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Data.Converters": {
+    "message": "Avalonia.Data.Converters",
+    "description": "The label for category Avalonia.Data.Converters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Data.Core": {
+    "message": "Avalonia.Data.Core",
+    "description": "The label for category Avalonia.Data.Core in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Data.Core.Parsers": {
+    "message": "Avalonia.Data.Core.Parsers",
+    "description": "The label for category Avalonia.Data.Core.Parsers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Data.Core.Plugins": {
+    "message": "Avalonia.Data.Core.Plugins",
+    "description": "The label for category Avalonia.Data.Core.Plugins in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.DesignerSupport": {
+    "message": "Avalonia.DesignerSupport",
+    "description": "The label for category Avalonia.DesignerSupport in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.DesignerSupport.Remote": {
+    "message": "Avalonia.DesignerSupport.Remote",
+    "description": "The label for category Avalonia.DesignerSupport.Remote in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.DesignerSupport.Remote.HtmlTransport": {
+    "message": "Avalonia.DesignerSupport.Remote.HtmlTransport",
+    "description": "The label for category Avalonia.DesignerSupport.Remote.HtmlTransport in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Diagnostics": {
+    "message": "Avalonia.Diagnostics",
+    "description": "The label for category Avalonia.Diagnostics in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Dialogs": {
+    "message": "Avalonia.Dialogs",
+    "description": "The label for category Avalonia.Dialogs in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Dialogs.Internal": {
+    "message": "Avalonia.Dialogs.Internal",
+    "description": "The label for category Avalonia.Dialogs.Internal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Input": {
+    "message": "Avalonia.Input",
+    "description": "The label for category Avalonia.Input in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Input.GestureRecognizers": {
+    "message": "Avalonia.Input.GestureRecognizers",
+    "description": "The label for category Avalonia.Input.GestureRecognizers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Input.Platform": {
+    "message": "Avalonia.Input.Platform",
+    "description": "The label for category Avalonia.Input.Platform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Input.Raw": {
+    "message": "Avalonia.Input.Raw",
+    "description": "The label for category Avalonia.Input.Raw in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Input.TextInput": {
+    "message": "Avalonia.Input.TextInput",
+    "description": "The label for category Avalonia.Input.TextInput in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Interactivity": {
+    "message": "Avalonia.Interactivity",
+    "description": "The label for category Avalonia.Interactivity in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Layout": {
+    "message": "Avalonia.Layout",
+    "description": "The label for category Avalonia.Layout in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Logging": {
+    "message": "Avalonia.Logging",
+    "description": "The label for category Avalonia.Logging in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LogicalTree": {
+    "message": "Avalonia.LogicalTree",
+    "description": "The label for category Avalonia.LogicalTree in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Parsers": {
+    "message": "Avalonia.Markup.Parsers",
+    "description": "The label for category Avalonia.Markup.Parsers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml": {
+    "message": "Avalonia.Markup.Xaml",
+    "description": "The label for category Avalonia.Markup.Xaml in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.Converters": {
+    "message": "Avalonia.Markup.Xaml.Converters",
+    "description": "The label for category Avalonia.Markup.Xaml.Converters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.Diagnostics": {
+    "message": "Avalonia.Markup.Xaml.Diagnostics",
+    "description": "The label for category Avalonia.Markup.Xaml.Diagnostics in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.MarkupExtensions": {
+    "message": "Avalonia.Markup.Xaml.MarkupExtensions",
+    "description": "The label for category Avalonia.Markup.Xaml.MarkupExtensions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.MarkupExtensions.CompiledBindings": {
+    "message": "Avalonia.Markup.Xaml.MarkupExtensions.CompiledBindings",
+    "description": "The label for category Avalonia.Markup.Xaml.MarkupExtensions.CompiledBindings in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.Styling": {
+    "message": "Avalonia.Markup.Xaml.Styling",
+    "description": "The label for category Avalonia.Markup.Xaml.Styling in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.Templates": {
+    "message": "Avalonia.Markup.Xaml.Templates",
+    "description": "The label for category Avalonia.Markup.Xaml.Templates in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.XamlIl.Runtime": {
+    "message": "Avalonia.Markup.Xaml.XamlIl.Runtime",
+    "description": "The label for category Avalonia.Markup.Xaml.XamlIl.Runtime in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media": {
+    "message": "Avalonia.Media",
+    "description": "The label for category Avalonia.Media in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.Fonts": {
+    "message": "Avalonia.Media.Fonts",
+    "description": "The label for category Avalonia.Media.Fonts in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.Fonts.Tables.Cmap": {
+    "message": "Avalonia.Media.Fonts.Tables.Cmap",
+    "description": "The label for category Avalonia.Media.Fonts.Tables.Cmap in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.Imaging": {
+    "message": "Avalonia.Media.Imaging",
+    "description": "The label for category Avalonia.Media.Imaging in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.Immutable": {
+    "message": "Avalonia.Media.Immutable",
+    "description": "The label for category Avalonia.Media.Immutable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.TextFormatting": {
+    "message": "Avalonia.Media.TextFormatting",
+    "description": "The label for category Avalonia.Media.TextFormatting in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.TextFormatting.Unicode": {
+    "message": "Avalonia.Media.TextFormatting.Unicode",
+    "description": "The label for category Avalonia.Media.TextFormatting.Unicode in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.Transformation": {
+    "message": "Avalonia.Media.Transformation",
+    "description": "The label for category Avalonia.Media.Transformation in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Metadata": {
+    "message": "Avalonia.Metadata",
+    "description": "The label for category Avalonia.Metadata in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Metal": {
+    "message": "Avalonia.Metal",
+    "description": "The label for category Avalonia.Metal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.MicroCom": {
+    "message": "Avalonia.MicroCom",
+    "description": "The label for category Avalonia.MicroCom in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.OpenGL": {
+    "message": "Avalonia.OpenGL",
+    "description": "The label for category Avalonia.OpenGL in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.OpenGL.Controls": {
+    "message": "Avalonia.OpenGL.Controls",
+    "description": "The label for category Avalonia.OpenGL.Controls in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.OpenGL.Egl": {
+    "message": "Avalonia.OpenGL.Egl",
+    "description": "The label for category Avalonia.OpenGL.Egl in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.OpenGL.Features": {
+    "message": "Avalonia.OpenGL.Features",
+    "description": "The label for category Avalonia.OpenGL.Features in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.OpenGL.Surfaces": {
+    "message": "Avalonia.OpenGL.Surfaces",
+    "description": "The label for category Avalonia.OpenGL.Surfaces in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Platform": {
+    "message": "Avalonia.Platform",
+    "description": "The label for category Avalonia.Platform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Platform.Storage": {
+    "message": "Avalonia.Platform.Storage",
+    "description": "The label for category Avalonia.Platform.Storage in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Platform.Storage.FileIO": {
+    "message": "Avalonia.Platform.Storage.FileIO",
+    "description": "The label for category Avalonia.Platform.Storage.FileIO in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Platform.Surfaces": {
+    "message": "Avalonia.Platform.Surfaces",
+    "description": "The label for category Avalonia.Platform.Surfaces in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Reactive": {
+    "message": "Avalonia.Reactive",
+    "description": "The label for category Avalonia.Reactive in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering": {
+    "message": "Avalonia.Rendering",
+    "description": "The label for category Avalonia.Rendering in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.Composition": {
+    "message": "Avalonia.Rendering.Composition",
+    "description": "The label for category Avalonia.Rendering.Composition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.Composition.Animations": {
+    "message": "Avalonia.Rendering.Composition.Animations",
+    "description": "The label for category Avalonia.Rendering.Composition.Animations in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.Composition.Drawing": {
+    "message": "Avalonia.Rendering.Composition.Drawing",
+    "description": "The label for category Avalonia.Rendering.Composition.Drawing in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.Composition.Expressions": {
+    "message": "Avalonia.Rendering.Composition.Expressions",
+    "description": "The label for category Avalonia.Rendering.Composition.Expressions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.Composition.Server": {
+    "message": "Avalonia.Rendering.Composition.Server",
+    "description": "The label for category Avalonia.Rendering.Composition.Server in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.Composition.Transport": {
+    "message": "Avalonia.Rendering.Composition.Transport",
+    "description": "The label for category Avalonia.Rendering.Composition.Transport in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Rendering.SceneGraph": {
+    "message": "Avalonia.Rendering.SceneGraph",
+    "description": "The label for category Avalonia.Rendering.SceneGraph in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Styling": {
+    "message": "Avalonia.Styling",
+    "description": "The label for category Avalonia.Styling in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Threading": {
+    "message": "Avalonia.Threading",
+    "description": "The label for category Avalonia.Threading in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Utilities": {
+    "message": "Avalonia.Utilities",
+    "description": "The label for category Avalonia.Utilities in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.VisualTree": {
+    "message": "Avalonia.VisualTree",
+    "description": "The label for category Avalonia.VisualTree in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Visuals.Platform": {
+    "message": "Avalonia.Visuals.Platform",
+    "description": "The label for category Avalonia.Visuals.Platform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Vulkan": {
+    "message": "Avalonia.Vulkan",
+    "description": "The label for category Avalonia.Vulkan in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Vulkan.UnmanagedInterop": {
+    "message": "Avalonia.Vulkan.UnmanagedInterop",
+    "description": "The label for category Avalonia.Vulkan.UnmanagedInterop in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CompiledAvaloniaXaml": {
+    "message": "CompiledAvaloniaXaml",
+    "description": "The label for category CompiledAvaloniaXaml in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Android": {
+    "message": "Avalonia.Android",
+    "description": "The label for category Avalonia.Android in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Android.Automation": {
+    "message": "Avalonia.Android.Automation",
+    "description": "The label for category Avalonia.Android.Automation in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Android.Internal": {
+    "message": "Avalonia.Android.Internal",
+    "description": "The label for category Avalonia.Android.Internal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Android.Platform.SkiaPlatform": {
+    "message": "Avalonia.Android.Platform.SkiaPlatform",
+    "description": "The label for category Avalonia.Android.Platform.SkiaPlatform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Browser": {
+    "message": "Avalonia.Browser",
+    "description": "The label for category Avalonia.Browser in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.ColorPicker": {
+    "message": "Avalonia.Controls.ColorPicker",
+    "description": "The label for category Avalonia.Controls.ColorPicker in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Primitives.Converters": {
+    "message": "Avalonia.Controls.Primitives.Converters",
+    "description": "The label for category Avalonia.Controls.Primitives.Converters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Markdown": {
+    "message": "Avalonia.Controls.Markdown",
+    "description": "The label for category Avalonia.Controls.Markdown in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.MediaPlayer": {
+    "message": "Avalonia.Controls.MediaPlayer",
+    "description": "The label for category Avalonia.Controls.MediaPlayer in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Media.Themes.Simple": {
+    "message": "Avalonia.Media.Themes.Simple",
+    "description": "The label for category Avalonia.Media.Themes.Simple in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Themes.Fluent": {
+    "message": "Avalonia.Themes.Fluent",
+    "description": "The label for category Avalonia.Themes.Fluent in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.global": {
+    "message": "global",
+    "description": "The label for category global in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.MediaPlayer.Abstractions": {
+    "message": "Avalonia.Controls.MediaPlayer.Abstractions",
+    "description": "The label for category Avalonia.Controls.MediaPlayer.Abstractions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.TreeDataGrid": {
+    "message": "Avalonia.Controls.TreeDataGrid",
+    "description": "The label for category Avalonia.Controls.TreeDataGrid in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Models": {
+    "message": "Avalonia.Controls.Models",
+    "description": "The label for category Avalonia.Controls.Models in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Models.TreeDataGrid": {
+    "message": "Avalonia.Controls.Models.TreeDataGrid",
+    "description": "The label for category Avalonia.Controls.Models.TreeDataGrid in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Experimental.Data": {
+    "message": "Avalonia.Experimental.Data",
+    "description": "The label for category Avalonia.Experimental.Data in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Experimental.Data.Core": {
+    "message": "Avalonia.Experimental.Data.Core",
+    "description": "The label for category Avalonia.Experimental.Data.Core in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.WebView": {
+    "message": "Avalonia.Controls.WebView",
+    "description": "The label for category Avalonia.Controls.WebView in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Android": {
+    "message": "Avalonia.Controls.Android",
+    "description": "The label for category Avalonia.Controls.Android in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Controls.Win.WebView2.Interop": {
+    "message": "Avalonia.Controls.Win.WebView2.Interop",
+    "description": "The label for category Avalonia.Controls.Win.WebView2.Interop in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Desktop": {
+    "message": "Avalonia.Desktop",
+    "description": "The label for category Avalonia.Desktop in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Fonts.Inter": {
+    "message": "Avalonia.Fonts.Inter",
+    "description": "The label for category Avalonia.Fonts.Inter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.FreeDesktop": {
+    "message": "Avalonia.FreeDesktop",
+    "description": "The label for category Avalonia.FreeDesktop in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Tmds.DBus.SourceGenerator": {
+    "message": "Tmds.DBus.SourceGenerator",
+    "description": "The label for category Tmds.DBus.SourceGenerator in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Headless.NUnit": {
+    "message": "Avalonia.Headless.NUnit",
+    "description": "The label for category Avalonia.Headless.NUnit in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Headless.Vnc": {
+    "message": "Avalonia.Headless.Vnc",
+    "description": "The label for category Avalonia.Headless.Vnc in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Headless.XUnit": {
+    "message": "Avalonia.Headless.XUnit",
+    "description": "The label for category Avalonia.Headless.XUnit in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LinuxFramebuffer": {
+    "message": "Avalonia.LinuxFramebuffer",
+    "description": "The label for category Avalonia.LinuxFramebuffer in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LinuxFramebuffer.Input": {
+    "message": "Avalonia.LinuxFramebuffer.Input",
+    "description": "The label for category Avalonia.LinuxFramebuffer.Input in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LinuxFramebuffer.Input.EvDev": {
+    "message": "Avalonia.LinuxFramebuffer.Input.EvDev",
+    "description": "The label for category Avalonia.LinuxFramebuffer.Input.EvDev in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LinuxFramebuffer.Input.LibInput": {
+    "message": "Avalonia.LinuxFramebuffer.Input.LibInput",
+    "description": "The label for category Avalonia.LinuxFramebuffer.Input.LibInput in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LinuxFramebuffer.Input.NullInput": {
+    "message": "Avalonia.LinuxFramebuffer.Input.NullInput",
+    "description": "The label for category Avalonia.LinuxFramebuffer.Input.NullInput in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.LinuxFramebuffer.Output": {
+    "message": "Avalonia.LinuxFramebuffer.Output",
+    "description": "The label for category Avalonia.LinuxFramebuffer.Output in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.Loader": {
+    "message": "Avalonia.Markup.Xaml.Loader",
+    "description": "The label for category Avalonia.Markup.Xaml.Loader in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Markup.Xaml.XamlIl.CompilerExtensions.Transformers": {
+    "message": "Avalonia.Markup.Xaml.XamlIl.CompilerExtensions.Transformers",
+    "description": "The label for category Avalonia.Markup.Xaml.XamlIl.CompilerExtensions.Transformers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.XamlX.IL": {
+    "message": "XamlX.IL",
+    "description": "The label for category XamlX.IL in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.XamlX.Parsers": {
+    "message": "XamlX.Parsers",
+    "description": "The label for category XamlX.Parsers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.XamlX.Transform": {
+    "message": "XamlX.Transform",
+    "description": "The label for category XamlX.Transform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.XamlX.TypeSystem": {
+    "message": "XamlX.TypeSystem",
+    "description": "The label for category XamlX.TypeSystem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Native": {
+    "message": "Avalonia.Native",
+    "description": "The label for category Avalonia.Native in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Skia": {
+    "message": "Avalonia.Skia",
+    "description": "The label for category Avalonia.Skia in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Skia.Helpers": {
+    "message": "Avalonia.Skia.Helpers",
+    "description": "The label for category Avalonia.Skia.Helpers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Skia.Metal": {
+    "message": "Avalonia.Skia.Metal",
+    "description": "The label for category Avalonia.Skia.Metal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.Win32.Interoperability": {
+    "message": "Avalonia.Win32.Interoperability",
+    "description": "The label for category Avalonia.Win32.Interoperability in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.X11": {
+    "message": "Avalonia.X11",
+    "description": "The label for category Avalonia.X11 in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.X11.Clipboard": {
+    "message": "Avalonia.X11.Clipboard",
+    "description": "The label for category Avalonia.X11.Clipboard in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.X11.Interop": {
+    "message": "Avalonia.X11.Interop",
+    "description": "The label for category Avalonia.X11.Interop in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Avalonia.X11.NativeDialogs": {
+    "message": "Avalonia.X11.NativeDialogs",
+    "description": "The label for category Avalonia.X11.NativeDialogs in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsSupport": {
+    "message": "AvaloniaUI.DiagnosticsSupport",
+    "description": "The label for category AvaloniaUI.DiagnosticsSupport in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsProtocol": {
+    "message": "AvaloniaUI.DiagnosticsProtocol",
+    "description": "The label for category AvaloniaUI.DiagnosticsProtocol in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsProtocol.Application": {
+    "message": "AvaloniaUI.DiagnosticsProtocol.Application",
+    "description": "The label for category AvaloniaUI.DiagnosticsProtocol.Application in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsProtocol.Protocol": {
+    "message": "AvaloniaUI.DiagnosticsProtocol.Protocol",
+    "description": "The label for category AvaloniaUI.DiagnosticsProtocol.Protocol in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsProtocol.Serialization": {
+    "message": "AvaloniaUI.DiagnosticsProtocol.Serialization",
+    "description": "The label for category AvaloniaUI.DiagnosticsProtocol.Serialization in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsProtocol.Tree": {
+    "message": "AvaloniaUI.DiagnosticsProtocol.Tree",
+    "description": "The label for category AvaloniaUI.DiagnosticsProtocol.Tree in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AvaloniaUI.DiagnosticsSupport.Avalonia.Handlers": {
+    "message": "AvaloniaUI.DiagnosticsSupport.Avalonia.Handlers",
+    "description": "The label for category AvaloniaUI.DiagnosticsSupport.Avalonia.Handlers in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CoreRPC.Utility": {
+    "message": "CoreRPC.Utility",
+    "description": "The label for category CoreRPC.Utility in sidebar apiSidebar"
+  }
+}

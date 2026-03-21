@@ -1,0 +1,110 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.documentationSidebar.category.Data display": {
+    "message": "Data display",
+    "description": "The label for category Data display in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Collections": {
+    "message": "Collections",
+    "description": "The label for category Collections in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Structured data": {
+    "message": "Structured data",
+    "description": "The label for category Structured data in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.TreeDataGrid": {
+    "message": "TreeDataGrid",
+    "description": "The label for category TreeDataGrid in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Text display": {
+    "message": "Text display",
+    "description": "The label for category Text display in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Markdown": {
+    "message": "Markdown",
+    "description": "The label for category Markdown in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.TextBlock": {
+    "message": "TextBlock",
+    "description": "The label for category TextBlock in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Feedback": {
+    "message": "Feedback",
+    "description": "The label for category Feedback in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Input": {
+    "message": "Input",
+    "description": "The label for category Input in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Buttons": {
+    "message": "Buttons",
+    "description": "The label for category Buttons in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Date and time": {
+    "message": "Date and time",
+    "description": "The label for category Date and time in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Selectors": {
+    "message": "Selectors",
+    "description": "The label for category Selectors in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Text input": {
+    "message": "Text input",
+    "description": "The label for category Text input in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Layout": {
+    "message": "Layout",
+    "description": "The label for category Layout in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Containers": {
+    "message": "Containers",
+    "description": "The label for category Containers in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.VirtualKeyboardScope": {
+    "message": "VirtualKeyboardScope",
+    "description": "The label for category VirtualKeyboardScope in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Panels": {
+    "message": "Panels",
+    "description": "The label for category Panels in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Media": {
+    "message": "Media",
+    "description": "The label for category Media in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.MediaPlayerControl": {
+    "message": "MediaPlayerControl",
+    "description": "The label for category MediaPlayerControl in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Menus": {
+    "message": "Menus",
+    "description": "The label for category Menus in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Navigation": {
+    "message": "Navigation",
+    "description": "The label for category Navigation in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Primitives": {
+    "message": "Primitives",
+    "description": "The label for category Primitives in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.System": {
+    "message": "System",
+    "description": "The label for category System in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.Web": {
+    "message": "Web",
+    "description": "The label for category Web in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.category.NativeWebView": {
+    "message": "NativeWebView",
+    "description": "The label for category NativeWebView in sidebar documentationSidebar"
+  },
+  "sidebar.documentationSidebar.doc.Home": {
+    "message": "Home",
+    "description": "The label for the doc item Home in sidebar documentationSidebar, linking to the doc index"
+  }
+}
