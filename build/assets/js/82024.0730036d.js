@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkavalonia_docs=self.webpackChunkavalonia_docs||[]).push([[82024],{82024:(e,a,c)=>{c.d(a,{createArchitectureServices:()=>s.S});var s=c(98815);c(95960)}}]);

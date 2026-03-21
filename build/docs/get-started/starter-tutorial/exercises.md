@@ -1,0 +1,144 @@
+# Exercises
+
+Now that you have built a temperature converter app, try these three exercises to test your understanding of Avalonia.
+
+## Exercise 1: Change an existing attribute[​](#exercise-1-change-an-existing-attribute "Direct link to Exercise 1: Change an existing attribute")
+
+**Challenge level: ★**
+
+Make the gridlines invisible in **GetStartedApp**.
+
+Hint
+
+You specified `<Grid>` in MainWindow\.axaml.
+
+Solution
+
+In **MainWindow\.axaml**, locate the `<Grid>` opening tag. Change the `ShowGridLines` attribute to `False`.
+
+```xml
+<Grid ShowGridLines="False" Margin="5" 
+  ColumnDefinitions="120, 100"
+  RowDefinitions="Auto, Auto, Auto">
+
+```
+
+## Exercise 2: Add a new attribute[​](#exercise-2-add-a-new-attribute "Direct link to Exercise 2: Add a new attribute")
+
+**Challenge level: ★★**
+
+Make it impossible for a user to input text into the Fahrenheit text box in **GetStartedApp**.
+
+Hint (1st)
+
+Check the [`TextBox` API reference](/api/avalonia/controls/textbox.md) for more information on the `TextBox` control.
+
+Hint (2nd)
+
+Under the [API reference for `TextBox`](/api/avalonia/controls/textbox.md), you’ll find the attribute `IsReadOnly`.
+
+Solution
+
+In **MainWindow\.axaml**, locate the `<TextBox>` tag for the Fahrenheit box. Add the `IsReadOnly` attribute, and set it to `True`.
+
+```xml
+<TextBox Grid.Row="1" Grid.Column="1" Margin="0 5" Text="0" Name="Fahrenheit" IsReadOnly="True"/>
+
+```
+
+## Exercise 3: Program a new event response[​](#exercise-3-program-a-new-event-response "Direct link to Exercise 3: Program a new event response")
+
+**Challenge level: ★★★**
+
+Make **GetStartedApp** calculate the temperature conversion as the user types.
+
+Hint (1st)
+
+Check the [`TextBox` API reference](/api/avalonia/controls/textbox.md) for more information on the `TextBox` control.
+
+Hint (2nd)
+
+Under the [API reference for `TextBox`](/api/avalonia/controls/textbox.md), you’ll find the event `TextChanged`.
+
+Hint (3rd)
+
+Your event handler is defined in the C# code-behind MainWindow\.axaml.cs. It is also referenced by the XAML file MainWindow\.axaml.
+
+Solution
+
+1. In **MainWindow\.axaml**, locate the `<TextBox>` tag for the Celsius box. Add the `TextChanged` event, and give the event a name, e.g. `Celsius_TextChanged`.
+
+```xml
+<TextBox Grid.Row="0" Grid.Column="1" Margin="0 5" Text="0" TextChanged="Celsius_TextChanged" Name="Celsius"/>
+
+```
+
+2. In **MainWindow\.axaml**, delete the entire line starting `<Button>`. It is no longer needed.
+
+~~`<Button HorizontalAlignment="Center" Click="Button_OnClick">Calculate</Button>`~~
+
+3. In **MainWindow\.axaml.cs**, locate the event handler line starting `private void`. Change the event name from `Button_OnClick` to whatever you named it in the XAML file, e.g. `Celsius_TextChanged`.
+
+```csharp
+private void Celsius_TextChanged(object? sender, RoutedEventArgs e)
+
+```
+
+4. Run the app to confirm that the value in the Fahrenheit box changes as you type in the Celsius box.
+
+Optional: Further improvement
+
+To allow the Celsius box to accept an empty state or a standalone minus sign, you can adjust the code-behind like so:
+
+1. In **MainWindow\.axaml.cs**, locate the event handler `private void Celsius_TextChanged`. Add a new `if` condition to allow input to be empty or a minus sign only.
+
+```csharp
+if (string.IsNullOrEmpty(Celsius.Text) || Celsius.Text == "-")
+    {
+        Fahrenheit.Text = "";
+    }
+
+```
+
+2. Change the original `double` parser to start `else if`, as it is now the second condition.
+
+```csharp
+else if (double.TryParse(Celsius.Text, out double C))
+
+```
+
+3. Your event handler should now look like this:
+
+```csharp
+private void Celsius_TextChanged(object? sender, RoutedEventArgs e)
+{
+    if (string.IsNullOrEmpty(Celsius.Text) || Celsius.Text == "-")
+    {
+        Fahrenheit.Text = "";
+    }
+    else if (double.TryParse(Celsius.Text, out double C))
+    {
+        var F = C * (9d / 5d) + 32;
+        Fahrenheit.Text = F.ToString("0.0");
+    }
+    else
+    {
+        Celsius.Text = "0";
+        Fahrenheit.Text = "0";
+    }
+}
+
+```
+
+4. Run the app to confirm that you can now delete all input from the Celsius box, or input a standalone minus sign, without the box resetting to 0. The Fahrenheit box displays nothing when this is the case. This improvement allows you to type in a negative number without interruption.
+
+Congratulations! You have completed this starter tutorial for Avalonia!
+
+## Suggested further reading[​](#suggested-further-reading "Direct link to Suggested further reading")
+
+* Try the next tutorial to create a [To-do list app](https://github.com/AvaloniaUI/Avalonia.Samples/tree/main/src/Avalonia.Samples/CompleteApps/SimpleToDoList)
+* Learn about Avalonia's [fundamentals](/docs/fundamentals/avalonia-xaml.md)
+* Understand the [MVVM design pattern](/docs/fundamentals/the-mvvm-pattern.md)
+* Explore options for UI [styling](/docs/styling/styles.md)
+* See the full list of [Avalonia controls](/controls.md)
+* Browse the [API documentation](/api.md)

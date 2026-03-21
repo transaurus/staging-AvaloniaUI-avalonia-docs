@@ -1,0 +1,101 @@
+# PathIcon
+
+The [`PathIcon`](/api/avalonia/controls/pathicon.md) control renders a vector icon from stream geometry data. You can use it to display scalable, resolution-independent icons in your application. The [Avalonia Fluent icons library](https://avaloniaui.github.io/icons.html) provides a large collection of ready-to-use geometry strings.
+
+Because `PathIcon` uses vector paths rather than raster images, your icons scale cleanly at any size and you can re-color them by changing the `Foreground` brush.
+
+`PathIcon` is most often used as part of a composition inside another control, for example to add an icon to a `Button`, `MenuItem`, or `NavigationViewItem`.
+
+## Common properties[​](#common-properties "Direct link to Common properties")
+
+| Property     | Type       | Description                                                                                                       |
+| ------------ | ---------- | ----------------------------------------------------------------------------------------------------------------- |
+| `Data`       | `Geometry` | The stream geometry that defines the icon shape.                                                                  |
+| `Foreground` | `IBrush`   | The brush used to fill the icon. If you do not set this property, the value is inherited from the parent control. |
+| `Width`      | `double`   | The rendered width of the icon.                                                                                   |
+| `Height`     | `double`   | The rendered height of the icon.                                                                                  |
+
+## Basic example[​](#basic-example "Direct link to Basic example")
+
+The following example displays a shop icon at 200 x 200 pixels with a blue fill. The geometry data is stored as a `StreamGeometry` resource and referenced with `StaticResource`.
+
+```xml
+<PathIcon Height="200" Width="200" Foreground="Blue"
+          Data="{StaticResource building_shop_regular}" />
+
+```
+
+Resources
+
+```xml
+<Window.Resources>
+  <StreamGeometry x:Key="building_shop_regular">M17.9999 2C18.1738 2 18.3411 2.06037 18.4742 2.16902L18.5497 2.23991L21.822 5.76824L21.8527 5.80714C21.9544 5.94281 22.0003 6.09665 22.0003 6.24775L21.9988 8.16674C21.9988 9.16092 21.6202 10.0667 20.9994 10.7478L20.9986 21.25C20.9986 21.6297 20.7165 21.9435 20.3504 21.9932L20.2486 22H3.75113C3.37144 22 3.05764 21.7178 3.00798 21.3518L3.00113 21.25L3.00035 10.7478C2.42729 10.1191 2.06067 9.29893 2.00765 8.39453L2.001 8.16674L2.0008 6.29097C1.99273 6.15366 2.02238 6.01238 2.09673 5.88313L2.16199 5.78767L2.20117 5.74193L5.45006 2.23991C5.56833 2.11243 5.7264 2.03081 5.89656 2.00715L5.99989 2H17.9999ZM15.0818 10.4421L15.0699 10.4598C14.371 11.3944 13.2555 11.9993 11.9987 11.9993C10.7349 11.9993 9.61393 11.3876 8.9158 10.4441C8.21835 11.3876 7.0974 11.9993 5.83357 11.9993C5.36446 11.9993 4.91504 11.915 4.49962 11.7608L4.50089 20.499H5.99951L5.99989 13.751C5.99989 13.3713 6.28204 13.0575 6.64812 13.0079L6.74989 13.001H11.2458C11.6255 13.001 11.9393 13.2832 11.989 13.6492L11.9958 13.751L11.9955 20.499H19.4979L19.4981 11.7615C19.0833 11.9153 18.6346 11.9993 18.1662 11.9993C16.9015 11.9993 15.7799 11.3867 15.0818 10.4421ZM10.4949 14.501H7.49989V20.499H10.4949V14.501ZM17.2546 13.001C17.6343 13.001 17.9481 13.2832 17.9978 13.6492L18.0046 13.751V17.253C18.0046 17.6327 17.7225 17.9465 17.3564 17.9962L17.2546 18.003H13.7532C13.3735 18.003 13.0597 17.7209 13.01 17.3548L13.0032 17.253V13.751C13.0032 13.3713 13.2853 13.0575 13.6514 13.0079L13.7532 13.001H17.2546ZM16.5039 14.501H14.5029V16.503H16.5039V14.501ZM8.16589 7.002H3.50089L3.501 8.16674L3.50717 8.33777L3.53555 8.569L3.5683 8.72528L3.61768 8.89726L3.67203 9.0451L3.71271 9.1391C3.74388 9.20697 3.77821 9.27309 3.81551 9.33727L3.91846 9.49873L3.97274 9.57344L4.10151 9.72909L4.24329 9.87318L4.33953 9.95811L4.38162 9.99243C4.69615 10.2429 5.07686 10.4138 5.49329 10.4747L5.67387 10.4939L5.83357 10.4993C7.06813 10.4993 8.07869 9.54019 8.16076 8.32644L8.16614 8.16674L8.16589 7.002ZM14.3309 7.002H9.66589L9.66614 8.16674C9.66614 9.34763 10.5437 10.3236 11.6822 10.478L11.839 10.4939L11.9987 10.4993C13.2333 10.4993 14.2438 9.54019 14.3259 8.32644L14.3313 8.16674L14.3309 7.002ZM20.4979 7.002H15.8329L15.8336 8.16674C15.8336 9.34763 16.7112 10.3236 17.8497 10.478L18.0065 10.4939L18.1662 10.4993C18.7305 10.4993 19.248 10.2989 19.6514 9.96542L19.7412 9.88731L19.857 9.7736L20.0032 9.60441C20.0572 9.53545 20.1075 9.46337 20.1536 9.38849L20.2571 9.20179L20.32 9.06383L20.3783 8.90873L20.4081 8.81314L20.4463 8.66108L20.4747 8.50352L20.4927 8.33678L20.4988 8.16674L20.4979 7.002ZM9.06151 3.499H6.32689L4.46889 5.502H8.44551L9.06151 3.499ZM13.3685 3.499H10.6305L10.0145 5.502H13.9845L13.3685 3.499ZM17.6719 3.499H14.9375L15.5535 5.502H19.5299L17.6719 3.499Z</StreamGeometry>
+</Window.Resources>
+
+```
+
+The result in the preview pane:
+
+![PathIcon showing a shop building icon](data:image/png;base64,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)
+
+## Using in buttons and menus[​](#using-in-buttons-and-menus "Direct link to Using in buttons and menus")
+
+`PathIcon` is commonly used to add icons to interactive controls. The following examples show typical usage inside a `Button` and a `MenuItem`.
+
+```xml
+<Button>
+    <StackPanel Orientation="Horizontal" Spacing="8">
+        <PathIcon Data="{StaticResource save_regular}" Width="16" Height="16" />
+        <TextBlock Text="Save" VerticalAlignment="Center" />
+    </StackPanel>
+</Button>
+
+<MenuItem Header="Open">
+    <MenuItem.Icon>
+        <PathIcon Data="{StaticResource open_regular}" />
+    </MenuItem.Icon>
+</MenuItem>
+
+```
+
+## Defining icon resources[​](#defining-icon-resources "Direct link to Defining icon resources")
+
+To reuse the same icon in multiple places, store your `StreamGeometry` values in a resource dictionary at the application or window level.
+
+```xml
+<Application.Resources>
+    <StreamGeometry x:Key="save_regular">M6.25 3C4.45507 ...</StreamGeometry>
+    <StreamGeometry x:Key="open_regular">M6.10822 3.40625 ...</StreamGeometry>
+</Application.Resources>
+
+```
+
+You can then reference any icon with `{StaticResource key_name}` throughout your application.
+
+Browse the [Avalonia Fluent icons](https://avaloniaui.github.io/icons.html) for a searchable gallery of ready-to-use geometry data.
+
+## Changing icon color dynamically[​](#changing-icon-color-dynamically "Direct link to Changing icon color dynamically")
+
+Because `PathIcon` inherits `Foreground` from its parent, you can change the icon color through styles or bindings without setting the property on every instance.
+
+```xml
+<Button Foreground="Green">
+    <!-- The PathIcon inherits Green from the Button -->
+    <PathIcon Data="{StaticResource check_regular}" Width="16" Height="16" />
+</Button>
+
+```
+
+To override the inherited color on a specific icon, set `Foreground` directly.
+
+```xml
+<PathIcon Data="{StaticResource warning_regular}" Foreground="Red"
+          Width="16" Height="16" />
+
+```
+
+## See also[​](#see-also "Direct link to See also")
+
+* [PathIcon API reference](https://reference.avaloniaui.net/api/Avalonia.Controls/PathIcon/)
+* [Image](/controls/media/image.md)
+* [Fluent icons gallery](https://avaloniaui.github.io/icons.html)

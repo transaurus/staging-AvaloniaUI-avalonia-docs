@@ -1,0 +1,180 @@
+# InlineUIContainer Class
+
+## Definition[​](#definition "Direct link to Definition")
+
+Namespace:[Avalonia.Controls.Documents](./)
+
+Assembly:`Avalonia.Controls`
+
+Package:`Avalonia`
+
+Source:[InlineUIContainer.cs](https://github.com/AvaloniaUI/Avalonia/blob/649891b3481c6e1581f42efc8f5f106f86ef6119/src/Avalonia.Controls/Documents/InlineUIContainer.cs)
+
+[InlineUIContainer](xref:Avalonia.Controls.Documents.InlineUIContainer) - a wrapper for embedded UIElements in text flow content inline collections
+
+```csharp
+public class InlineUIContainer
+
+```
+
+Inheritance: object -> [AvaloniaObject](../../avaloniaobject) -> [Animatable](../../animation/animatable) -> [StyledElement](../../styledelement) -> [TextElement](textelement) -> [Inline](inline) -> InlineUIContainer
+
+## Constructors[​](#constructors "Direct link to Constructors")
+
+| Name                                               | Description                                                                                                    |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [InlineUIContainer (2 overloads)](#uid-6479fdf536) | Initializes a new instance of [InlineUIContainer](xref:Avalonia.Controls.Documents.InlineUIContainer) element. |
+
+### InlineUIContainer overloads[​](#inlineuicontainer-overloads "Direct link to InlineUIContainer overloads")
+
+#### InlineUIContainer Constructor[​](#inlineuicontainer-constructor "Direct link to InlineUIContainer Constructor")
+
+Initializes a new instance of [InlineUIContainer](xref:Avalonia.Controls.Documents.InlineUIContainer) element.
+
+```csharp
+public InlineUIContainer()
+
+```
+
+##### Remarks[​](#remarks "Direct link to Remarks")
+
+The purpose of this element is to be a wrapper for UIElements when they are embedded into text flow - as items of InlineCollections.
+
+#### InlineUIContainer Constructor[​](#inlineuicontainer-constructor-1 "Direct link to InlineUIContainer Constructor")
+
+Initializes an InlineBox specifying its child UIElement
+
+```csharp
+public InlineUIContainer(Avalonia.Controls.Control child)
+
+```
+
+##### Parameters[​](#parameters "Direct link to Parameters")
+
+`child` [Avalonia.Controls.Control](xref:Avalonia.Controls.Control)
+
+UIElement set as a child of this inline item
+
+## Methods[​](#methods "Direct link to Methods")
+
+| Name                                                                               | Description                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [GetTextDecorations](/api/avalonia/controls/documents/inline.md#uid-4d74bace83)    | Gets the value of the attached [Avalonia.Controls.Documents.Inline.TextDecorationsProperty](xref:Avalonia.Controls.Documents.Inline.TextDecorationsProperty) on a control. Inherited from [Inline](/api/avalonia/controls/documents/inline.md).                 |
+| [SetTextDecorations](/api/avalonia/controls/documents/inline.md#uid-2052982b12)    | Sets the value of the attached [Avalonia.Controls.Documents.Inline.TextDecorationsProperty](xref:Avalonia.Controls.Documents.Inline.TextDecorationsProperty) on a control. Inherited from [Inline](/api/avalonia/controls/documents/inline.md).                 |
+| [GetFontFamily](/api/avalonia/controls/documents/textelement.md#uid-c5ceb73f28)    | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.FontFamilyProperty](xref:Avalonia.Controls.Documents.TextElement.FontFamilyProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).       |
+| [GetFontFeatures](/api/avalonia/controls/documents/textelement.md#uid-d4e44aca10)  | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.FontFeaturesProperty](xref:Avalonia.Controls.Documents.TextElement.FontFeaturesProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).   |
+| [GetFontSize](/api/avalonia/controls/documents/textelement.md#uid-c0f4278d7f)      | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.FontSizeProperty](xref:Avalonia.Controls.Documents.TextElement.FontSizeProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).           |
+| [GetFontStretch](/api/avalonia/controls/documents/textelement.md#uid-72d0eaa7f6)   | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.FontStretchProperty](xref:Avalonia.Controls.Documents.TextElement.FontStretchProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).     |
+| [GetFontStyle](/api/avalonia/controls/documents/textelement.md#uid-6751a83a3d)     | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.FontStyleProperty](xref:Avalonia.Controls.Documents.TextElement.FontStyleProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).         |
+| [GetFontWeight](/api/avalonia/controls/documents/textelement.md#uid-bb5b16d4db)    | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.FontWeightProperty](xref:Avalonia.Controls.Documents.TextElement.FontWeightProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).       |
+| [GetForeground](/api/avalonia/controls/documents/textelement.md#uid-69f108c6e9)    | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.ForegroundProperty](xref:Avalonia.Controls.Documents.TextElement.ForegroundProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).       |
+| [GetLetterSpacing](/api/avalonia/controls/documents/textelement.md#uid-e7161f4b7a) | Gets the value of the attached [Avalonia.Controls.Documents.TextElement.LetterSpacingProperty](xref:Avalonia.Controls.Documents.TextElement.LetterSpacingProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md). |
+| [SetFontFamily](/api/avalonia/controls/documents/textelement.md#uid-e60c993f66)    | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.FontFamilyProperty](xref:Avalonia.Controls.Documents.TextElement.FontFamilyProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).       |
+| [SetFontFeatures](/api/avalonia/controls/documents/textelement.md#uid-e68e1cee20)  | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.FontFeaturesProperty](xref:Avalonia.Controls.Documents.TextElement.FontFeaturesProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).   |
+| [SetFontSize](/api/avalonia/controls/documents/textelement.md#uid-f673d66a15)      | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.FontSizeProperty](xref:Avalonia.Controls.Documents.TextElement.FontSizeProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).           |
+| [SetFontStretch](/api/avalonia/controls/documents/textelement.md#uid-445315add7)   | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.FontStretchProperty](xref:Avalonia.Controls.Documents.TextElement.FontStretchProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).     |
+| [SetFontStyle](/api/avalonia/controls/documents/textelement.md#uid-be1a243b99)     | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.FontStyleProperty](xref:Avalonia.Controls.Documents.TextElement.FontStyleProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).         |
+| [SetFontWeight](/api/avalonia/controls/documents/textelement.md#uid-9c88d2bfb1)    | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.FontWeightProperty](xref:Avalonia.Controls.Documents.TextElement.FontWeightProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).       |
+| [SetForeground](/api/avalonia/controls/documents/textelement.md#uid-af4d1d4aed)    | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.ForegroundProperty](xref:Avalonia.Controls.Documents.TextElement.ForegroundProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).       |
+| [SetLetterSpacing](/api/avalonia/controls/documents/textelement.md#uid-4e0846dc4b) | Sets the value of the attached [Avalonia.Controls.Documents.TextElement.LetterSpacingProperty](xref:Avalonia.Controls.Documents.TextElement.LetterSpacingProperty) on a control. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md). |
+| [ApplyStyling](/api/avalonia/styledelement.md#uid-b0f81a6f8f)                      | Applies styling to the control if the control is initialized and styling is not already applied. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                |
+| [BeginInit](/api/avalonia/styledelement.md#uid-91c6ccadce)                         | Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                                                                                 |
+| [EndInit](/api/avalonia/styledelement.md#uid-17b450469d)                           | Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                                                                                 |
+| [TryGetResource](/api/avalonia/styledelement.md#uid-2046a6b284)                    | Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                                                                                 |
+| [Bind (8 overloads)](/api/avalonia/avaloniaobject.md#uid-1c60c7bda3)               | Binds a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty) to an [Avalonia.Data.BindingBase](xref:Avalonia.Data.BindingBase). Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                        |
+| [CheckAccess](/api/avalonia/avaloniaobject.md#uid-260ff7a68d)                      | Returns a value indicating whether the current thread is the UI thread. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                       |
+| [ClearValue (4 overloads)](/api/avalonia/avaloniaobject.md#uid-41de208fbe)         | Clears a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty)'s local value. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                           |
+| [CoerceValue](/api/avalonia/avaloniaobject.md#uid-3bec32f39e)                      | Coerces the specified [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty). Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                            |
+| [Equals](/api/avalonia/avaloniaobject.md#uid-a8a8e94305)                           | Compares two objects using reference equality. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                                                |
+| [GetBaseValue](/api/avalonia/avaloniaobject.md#uid-9c615efbba)                     | Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                                                                                               |
+| [GetHashCode](/api/avalonia/avaloniaobject.md#uid-7f7db1e7a2)                      | Gets the hash code for the object. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                                                            |
+| [GetValue (3 overloads)](/api/avalonia/avaloniaobject.md#uid-5142cd4792)           | Gets a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty) value. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                     |
+| [IsAnimating](/api/avalonia/avaloniaobject.md#uid-8cbfc7521a)                      | Checks whether a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty) is animating. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                    |
+| [IsSet](/api/avalonia/avaloniaobject.md#uid-f8bf0bbdcc)                            | Checks whether a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty) is set on this object. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                           |
+| [SetCurrentValue (2 overloads)](/api/avalonia/avaloniaobject.md#uid-38759fd088)    | Sets the value of a dependency property without changing its value source. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                    |
+| [SetValue (3 overloads)](/api/avalonia/avaloniaobject.md#uid-47d14e19d7)           | Sets a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty) value. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                     |
+| [VerifyAccess](/api/avalonia/avaloniaobject.md#uid-3b9d3c9793)                     | Checks that the current thread is the UI thread and throws if not. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                            |
+
+## Properties[​](#properties "Direct link to Properties")
+
+| Name                                                                            | Description                                                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Child](#uid-ed62e410f1)                                                        | The content spanned by this [TextElement](xref:Avalonia.Controls.Documents.TextElement).                                                                                                                                                          |
+| [BaselineAlignment](/api/avalonia/controls/documents/inline.md#uid-27ad7a633a)  | Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text. Inherited from [Inline](/api/avalonia/controls/documents/inline.md).                                       |
+| [TextDecorations](/api/avalonia/controls/documents/inline.md#uid-ef16a51946)    | The [TextDecorations](xref:Avalonia.Media.TextDecorations) property specifies decorations that are added to the text of an element. Inherited from [Inline](/api/avalonia/controls/documents/inline.md).                                          |
+| [Background](/api/avalonia/controls/documents/textelement.md#uid-277cd2ec21)    | Gets or sets a brush used to paint the control's background. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                       |
+| [FontFamily](/api/avalonia/controls/documents/textelement.md#uid-d18a3f2edb)    | Gets or sets the font family. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                      |
+| [FontFeatures](/api/avalonia/controls/documents/textelement.md#uid-278c9ca640)  | Gets or sets the font features. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                    |
+| [FontSize](/api/avalonia/controls/documents/textelement.md#uid-87408bf877)      | Gets or sets the font size. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                        |
+| [FontStretch](/api/avalonia/controls/documents/textelement.md#uid-2d7762947c)   | Gets or sets the font stretch. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                     |
+| [FontStyle](/api/avalonia/controls/documents/textelement.md#uid-07648f353f)     | Gets or sets the font style. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                       |
+| [FontWeight](/api/avalonia/controls/documents/textelement.md#uid-860a9d701a)    | Gets or sets the font weight. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                      |
+| [Foreground](/api/avalonia/controls/documents/textelement.md#uid-1e9279a865)    | Gets or sets a brush used to paint the text. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                       |
+| [LetterSpacing](/api/avalonia/controls/documents/textelement.md#uid-5cd152ce8b) | Gets or sets the letter spacing. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                                                                                                                   |
+| [ActualThemeVariant](/api/avalonia/styledelement.md#uid-776bcbe4bf)             | Gets the UI theme that is currently used by the element, which might be different than the RequestedThemeVariantProperty. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                         |
+| [Classes](/api/avalonia/styledelement.md#uid-b7b7edea05)                        | Gets or sets the styled element's classes. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                        |
+| [DataContext](/api/avalonia/styledelement.md#uid-647f924a56)                    | Gets or sets the control's data context. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                          |
+| [IsInitialized](/api/avalonia/styledelement.md#uid-59a7cddacb)                  | Gets a value that indicates whether the element has finished initialization. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                      |
+| [Name](/api/avalonia/styledelement.md#uid-245f4ccff5)                           | Gets or sets the name of the styled element. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                      |
+| [Parent](/api/avalonia/styledelement.md#uid-aad2c5c78d)                         | Gets the styled element's logical parent. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                         |
+| [Resources](/api/avalonia/styledelement.md#uid-f6488ca4b7)                      | Gets or sets the styled element's resource dictionary. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                            |
+| [StyleKey](/api/avalonia/styledelement.md#uid-081584075e)                       | Gets the type by which the element is styled. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                     |
+| [Styles](/api/avalonia/styledelement.md#uid-ae663139cc)                         | Gets the styles for the styled element. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                                           |
+| [TemplatedParent](/api/avalonia/styledelement.md#uid-dbf6ddacc3)                | Gets the styled element whose lookless template this styled element is part of. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                   |
+| [Theme](/api/avalonia/styledelement.md#uid-1aebed283d)                          | Gets or sets the theme to be applied to the element. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                                              |
+| [Transitions](/api/avalonia/animation/animatable.md#uid-1b3138f517)             | Gets or sets the property transitions for the control. Inherited from [Animatable](/api/avalonia/animation/animatable.md).                                                                                                                        |
+| [Dispatcher](/api/avalonia/avaloniaobject.md#uid-b25fa51632)                    | Returns the [Avalonia.AvaloniaObject.Dispatcher](xref:Avalonia.AvaloniaObject.Dispatcher) that this [Avalonia.AvaloniaObject](xref:Avalonia.AvaloniaObject) is associated with. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md). |
+| [Item](/api/avalonia/avaloniaobject.md#uid-c1d1f1bc0f)                          | Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).                                                                                                                                                                                 |
+
+### Child Property[​](#child-property "Direct link to Child Property")
+
+The content spanned by this [TextElement](xref:Avalonia.Controls.Documents.TextElement).
+
+```csharp
+public Avalonia.Controls.Control Child { get; set; }
+
+```
+
+## Fields[​](#fields "Direct link to Fields")
+
+| Name                                                                                    | Description                                                                                                                                                                                                                                             |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ChildProperty](#uid-76badbe786)                                                        | Defines the [Avalonia.Controls.Documents.InlineUIContainer.Child](xref:Avalonia.Controls.Documents.InlineUIContainer.Child) property.                                                                                                                   |
+| [BaselineAlignmentProperty](/api/avalonia/controls/documents/inline.md#uid-ffb1ae98bb)  | [AvaloniaProperty](xref:Avalonia.AvaloniaProperty) for [Avalonia.Controls.Documents.Inline.BaselineAlignment](xref:Avalonia.Controls.Documents.Inline.BaselineAlignment) property. Inherited from [Inline](/api/avalonia/controls/documents/inline.md). |
+| [TextDecorationsProperty](/api/avalonia/controls/documents/inline.md#uid-aeaf3934a5)    | [AvaloniaProperty](xref:Avalonia.AvaloniaProperty) for [Avalonia.Controls.Documents.Inline.TextDecorations](xref:Avalonia.Controls.Documents.Inline.TextDecorations) property. Inherited from [Inline](/api/avalonia/controls/documents/inline.md).     |
+| [BackgroundProperty](/api/avalonia/controls/documents/textelement.md#uid-b965769f00)    | Defines the [Avalonia.Controls.Documents.TextElement.Background](xref:Avalonia.Controls.Documents.TextElement.Background) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                      |
+| [FontFamilyProperty](/api/avalonia/controls/documents/textelement.md#uid-e8c10826bf)    | Defines the [Avalonia.Controls.Documents.TextElement.FontFamily](xref:Avalonia.Controls.Documents.TextElement.FontFamily) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                      |
+| [FontFeaturesProperty](/api/avalonia/controls/documents/textelement.md#uid-a875004e9a)  | Defines the [Avalonia.Controls.Documents.TextElement.FontFeatures](xref:Avalonia.Controls.Documents.TextElement.FontFeatures) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                  |
+| [FontSizeProperty](/api/avalonia/controls/documents/textelement.md#uid-59b255c1cf)      | Defines the [Avalonia.Controls.Documents.TextElement.FontSize](xref:Avalonia.Controls.Documents.TextElement.FontSize) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                          |
+| [FontStretchProperty](/api/avalonia/controls/documents/textelement.md#uid-a945a04355)   | Defines the [Avalonia.Controls.Documents.TextElement.FontStretch](xref:Avalonia.Controls.Documents.TextElement.FontStretch) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                    |
+| [FontStyleProperty](/api/avalonia/controls/documents/textelement.md#uid-af151c4d46)     | Defines the [Avalonia.Controls.Documents.TextElement.FontStyle](xref:Avalonia.Controls.Documents.TextElement.FontStyle) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                        |
+| [FontWeightProperty](/api/avalonia/controls/documents/textelement.md#uid-de168eb28f)    | Defines the [Avalonia.Controls.Documents.TextElement.FontWeight](xref:Avalonia.Controls.Documents.TextElement.FontWeight) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                      |
+| [ForegroundProperty](/api/avalonia/controls/documents/textelement.md#uid-ed0572d506)    | Defines the [Avalonia.Controls.Documents.TextElement.Foreground](xref:Avalonia.Controls.Documents.TextElement.Foreground) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                      |
+| [LetterSpacingProperty](/api/avalonia/controls/documents/textelement.md#uid-17f1013907) | Defines the [Avalonia.Controls.Documents.TextElement.LetterSpacing](xref:Avalonia.Controls.Documents.TextElement.LetterSpacing) property. Inherited from [TextElement](/api/avalonia/controls/documents/textelement.md).                                |
+| [DataContextProperty](/api/avalonia/styledelement.md#uid-7eefabb929)                    | Defines the [Avalonia.StyledElement.DataContext](xref:Avalonia.StyledElement.DataContext) property. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                     |
+| [NameProperty](/api/avalonia/styledelement.md#uid-bcdbb9de56)                           | Defines the [Avalonia.StyledElement.Name](xref:Avalonia.StyledElement.Name) property. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                   |
+| [ParentProperty](/api/avalonia/styledelement.md#uid-dc6481a488)                         | Defines the [Avalonia.StyledElement.Parent](xref:Avalonia.StyledElement.Parent) property. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                               |
+| [TemplatedParentProperty](/api/avalonia/styledelement.md#uid-a2c7149a6b)                | Defines the [Avalonia.StyledElement.TemplatedParent](xref:Avalonia.StyledElement.TemplatedParent) property. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                             |
+| [ThemeProperty](/api/avalonia/styledelement.md#uid-05852d7b9a)                          | Defines the [Avalonia.StyledElement.Theme](xref:Avalonia.StyledElement.Theme) property. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                                                                 |
+| [TransitionsProperty](/api/avalonia/animation/animatable.md#uid-c79f18fac2)             | Defines the [Avalonia.Animation.Animatable.Transitions](xref:Avalonia.Animation.Animatable.Transitions) property. Inherited from [Animatable](/api/avalonia/animation/animatable.md).                                                                   |
+
+### ChildProperty Field[​](#childproperty-field "Direct link to ChildProperty Field")
+
+Defines the [Avalonia.Controls.Documents.InlineUIContainer.Child](xref:Avalonia.Controls.Documents.InlineUIContainer.Child) property.
+
+```csharp
+public Avalonia.StyledProperty<Avalonia.Controls.Control> ChildProperty
+
+```
+
+## Events[​](#events "Direct link to Events")
+
+| Name                                                                       | Description                                                                                                                                                                     |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ActualThemeVariantChanged](/api/avalonia/styledelement.md#uid-e69ef27e71) | Raised when the theme variant is changed on the element or an ancestor of the element. Inherited from [StyledElement](/api/avalonia/styledelement.md).                          |
+| [AttachedToLogicalTree](/api/avalonia/styledelement.md#uid-717aa68e85)     | Raised when the styled element is attached to a rooted logical tree. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                            |
+| [DataContextChanged](/api/avalonia/styledelement.md#uid-4b1cc873f8)        | Occurs when the [Avalonia.StyledElement.DataContext](xref:Avalonia.StyledElement.DataContext) property changes. Inherited from [StyledElement](/api/avalonia/styledelement.md). |
+| [DetachedFromLogicalTree](/api/avalonia/styledelement.md#uid-d9f5afa535)   | Raised when the styled element is detached from a rooted logical tree. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                          |
+| [Initialized](/api/avalonia/styledelement.md#uid-bd6a5e5c0e)               | Occurs when the styled element has finished initialization. Inherited from [StyledElement](/api/avalonia/styledelement.md).                                                     |
+| [ResourcesChanged](/api/avalonia/styledelement.md#uid-99a7f47c56)          | Occurs when a resource in this styled element or a parent styled element has changed. Inherited from [StyledElement](/api/avalonia/styledelement.md).                           |
+| [PropertyChanged](/api/avalonia/avaloniaobject.md#uid-d758e26fae)          | Raised when a [Avalonia.AvaloniaProperty](xref:Avalonia.AvaloniaProperty) value changes on this object. Inherited from [AvaloniaObject](/api/avalonia/avaloniaobject.md).       |

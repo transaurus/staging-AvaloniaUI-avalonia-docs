@@ -1,0 +1,105 @@
+# Data context
+
+When Avalonia performs data binding, it must locate an application object to bind to. This location is represented by a **data context**.
+
+![Diagram showing how data context connects controls to view model properties](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYwAAACFBAMAAAC6b9IFAAAAKlBMVEX////39/ft7e1sbW1AQECio6N9fn/FxcXf398fHx8FBQWtsbWLi4vP4vMDGUe+AAAEiUlEQVR4Ae3bAUsbZxzH8V8vl3uulwDdXsHRloV2BY4mq2stcJjT6AwQUBnrBI5FIkWAB71VIwVuOGcdBZy6pesGHFZMaQEOdGyyCrLaWta8Bd/LLpk418xodqHnpf9vAADCwYf/89zziAQURVEURVEU9a/OvNd0597WE5voQrLZUjk0LJpONttV+O0DNBs7jsHRbF+EmkEMYhCDGMQgBjGIQQymYhzVEqFmiBwZVLMARM0wM1hCxaSFOfvCVYyHl3G2pxRJG1LPD1/3Fq/nQstQ7I15jEiqJZkZYcEnww5uGrhkwWKpZclcNcr+GHI2GIaLjALLwsZl15vGCsb9MWbGAmHEnk7oymi3+Mq4fM+QPs7f97eo5M7PA2FgvUdVdnJC8pdY+hvWEU/bvhgzWwExvJSWneJy515wDLFljJmtvaF7B9khvVN5w9hbLxykhZThDeNwLWB8uIvDCdw/g71WBQ6BH8nwhlHPUJ4sqQAk1Lr9MIdajKOW25DBlka0wwuf6b4ZgpEvMR1s/7kL9YzqMOoZuKAfvEakLrl0cOzW0hsyFC6UMIlEQp3mU5zxFjAkHdOslwtcGIcwxcp4s9HaMOoZKEuGdkMfTKtQbEwxw4ykum5lLqbP90oDjxoyLAAXk13F9ONb5nLXktEkQ8jO1jHOcoiTq6mEvjHibo4MreHNkltHMPoHhYzCFsVtTAOY5z1K7prI+6P6oKU2nsYOgOe4WcRNBSsRM/JpHSOdbNTDn+sYCiCO6pFd/bHgZORtp46R3TuKId8pKUiMmDXGACwFE+L4WsERy9CPm4baiQ0LBQWOyKXRJqfRPVvPsCH+anpPWjUcB3BOPo3y5lhGkZcGzOoznj2vMixxqjTJj2VcttFdQH6f4UZG/e8N0cS3Cc1jOOCL2HZOvDci+jWhpEiaaNa2eFHNVxm8xPTBorrQkBHvt/Ti76Uqw3VYZnPOP0Ne+/J79rQ4pyfv6vk7Wvmkb6onj9SikRUfLBsacOOTXHy5y2NI5WLfbw8iWl9DBiayKkvyWUzGNBMTHXLONwNX0lxe72B6vEeNZ9WB48+N03yKx/TGp3hIGBY/6Z0qHzyjJTdcNayM+r83QsnwxtEWDLmzLRiYGWsLhpxtCwZs+v8GMYhBDGIQo3HEIAYxiEEMYhAjFL8YSKX9/2Kg6UQXLU7exttv3mwLxp/foR2aaf00OAIq/IsqarcFI24jBAXAkG3aG/+3GO2N/05Q33EG7Q0W6N6gF64PBuMIb9MuHAAS0z/TAltU/pfA9EqNIQKFEO+NM1YKTqTPvNHR/eNtWIFe1H0wYF1ynR30i0wviO5HCCb/h5XFVpwMClVGVFsMeFH5YCDl9P/NEH7Swrs3cMkZPF866zFw3T2e4Z5KBibAdMlwxYw2hE20poDP3JcIflH5T1x8d+5UufAzgoqFeBo+CtfeIEYgsdkXsQrzPnLlfMWu8Io7nBvevut97v9x5VV8N/46/iJaiR3+QiU3nHv2zxd2vS/sP+P9ylcV/pIjgM6BoiiKoiiKoiiKoiiKOs39BRSjT6/8zFAJAAAAAElFTkSuQmCC)
+
+Every control in Avalonia has a `DataContext` property, including built-in controls, user controls, and windows.
+
+When binding, Avalonia performs a hierarchical search of the logical control tree, starting with the control where you define the binding, until it finds a data context to use.
+
+![Diagram showing data context inheritance through the control tree](data:image/png;base64,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)
+
+This means that a control defined in a window can use the data context of the window; or (as above) a control in a control in a window can use the window's data context.
+
+info
+
+For information about the control trees in Avalonia, and how to see them at run-time, see [Control trees](/docs/custom-controls/control-trees.md).
+
+## Example[​](#example "Direct link to Example")
+
+You can see the window's data context being set if you create a new project using the *Avalonia MVVM Application* template. Open the **App.axaml.cs** file to see the code:
+
+```csharp
+public override void OnFrameworkInitializationCompleted()
+{
+    if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+    {
+        desktop.MainWindow = new MainWindow
+        {
+            DataContext = new MainWindowViewModel(),
+        };
+    }
+
+    base.OnFrameworkInitializationCompleted();
+}
+
+```
+
+You can find the object being set to the window's data context in the file **MainWindowViewModel.cs**:
+
+```csharp
+public class MainWindowViewModel : ViewModelBase
+{
+    public string Greeting => "Welcome to Avalonia!";
+}
+
+```
+
+In the main window file **MainWindow\.axaml**, you can see that the window content area contains a `TextBlock` with its `Text` property bound to the `Greeting` property.
+
+```xml
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaMVVMApplication2.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaMVVMApplication2.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaMVVMApplication2">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+</Window>
+
+```
+
+When the project runs, the data binder searches up the logical control tree from the text block and finds a data context set at the main window level. So the bound text appears as:
+
+![App window showing a greeting bound from the data context](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAo8AAAFrCAMAAACHc5NAAAAAe1BMVEVtbW5wcHAmPlf////6+vv09PTEvsargr8BAgLMzMza2tuPUqy2ZgAVUaT//7ZmADyQ2///25AkADpmAADbkDo6kNv/tmZ1OYjq6+pHRERmtv9XV1cvAGa2/////9uQOiLb//8kCwuBgYCyuLWjp6Pb/7ZlZWYkKSmUlJS0X4CVAAAHfUlEQVR4AeyYh3LrIBBF83xVUBAyqjjuTvn/X3yUtURGmfSePSlXZmGZcqx2wTBv5N87crEAw3wX2EeGfWQY9pFhHxmGfWR+i4+JA8y3gH1MxmC+GvaRzoxs5PeAfQTSLM+zlIVkXoIYedbsImQhHvLxItbxUnou43NlqXCfaqlxj7rRVGnD3K7RZW9zUBRRYd6RelKXmPlQKUQP5pshZgePUYiC4nEfgVQa6UmBFQL14ko/7mNc8XOrttGDcvasKaLCrOOs5yO71JrGmR/qI5lI/x7zMQEyYzKgkDIHLhHo+q5/vo8bN3dYLHW93dmPO4qoQB1f5yMS7A/s40/2kYQkHR/1Mc+lhCV3PtL0/UHX6rg/rIFBHUshlDelPgmxtkfXQvR+gCo3y51dcrPUbsWgQBEVqKMduj2Jfgpd+Zpr63pVrf032wlwdoP5uT6SkKTj4z7K4KOPDB4vo3ZOoVwDJE7VrlE3NhSG7c4OjJXSFtSdHeh6t4AiLlBHu/ZoW1CExftDDw/pOdsJQNnjC+BHlC/wMcmMKcJDDUDzrU/olL/mmiMGIbw7tVOjXJMzLsaKOobxWq2sdRRxYeyoqQUFtQXGXpjtBDL2d8PXa2JljJG5kdP1umqFZbsLN31Wjv3hQR/Hyv5wq4424Q9AERXOHcOcNUXs49hr7uPfuXnk5xkkQGEc0flxCE6tUS82OwzjtbVdO20mH8cKBrqhRGcPQBEVzh2r1vtNEV+vp16znQYF5q+870kArHIpcwvIxzI4paxBymkkFleanjIajcnHqbI3O9ikl4cUUeHc0T5yhwcViiBgaz+EXiiFmu3U/W/vPpAkVQEADHc/wGo9gZaVBi3l/id84MzYvTnn79u8S7MT/gJx0q36N3Zs98NbkHdd+LFaYecvcO/xvUWOv7xH9DgOfVe/9f0Yf3WP6PEuhl8PPYIeQY/oEfSIHuEretzC7wM9TgF+nx73AP/29SPoET2CHtEj6BE9gh7RI+gRPYIeQY/oEfSI938E6yN6BPs11kfQI/ZrsD6CHtEj6BE9gh7RI+gRPYIe0SPoET3+F0CPoEf0CHpEj6BH9Ah6xNfTBG8vRI+gR9AjegQ9okfQI3oEPaJH0CN6BD2CHtEj6BE9gh7RI+gRPYIe0SPoET2CHkGP6BH0iB5Bj+gR9IgeQY/okV9Nj3sA6yPoET2CHtEj6BE9gh7RI+gRPYIeQY/oEfSIHkGP6BH0iB5Bj/j4QrA+gh7RI+gRPYIe0SPoET2CHtEj6BE9gh5Bj+gR9IgeQY/oEfSIjy8E6yN6BD2CHtEjOF9jfQQ9okfQI3oEPaJH0CPoET2CHtEj6BE9gh7RI+gRPYIe0SPoEfSIHkGP6BH0iB7/EiXXn4Z9qT8vWwrPhmkI36Jv8919eNIyp/Aibase9di1IpZbjjWOEr6ix7R172b2lONn9djoUY9341wryfOcWljfqcc0l2nUox6/QtqW2s9SqxyOH7dpjUc6sexPW60q5X3P9ddc8tM0LPteYngdV43T7bal+180/TRsSy29DyFe19DPt708TFqzXPN6TLS2h25Pe07tCdGjHkMprcTrErotDdPSfhzplG1MZUvxmscxX1LIc1/TXFM/9eFl3Lk+vvzFer8mLTnWglu4wziVNMwPk85jWKc20dJ6TFsex2s55tGjHvstLde45hbmcQXZXVJN59jHU5/6Ws+x1OXc6hpDvC7nuLPHkttMcwpNqvH109hmDnXqEENbEMPrpPFydNgedPwaY51rS3rUYxVrI2Wt7YyXLl5vzTTWdFpMTQsqxLyePYa8nuNeemyNvlyKVq3F1mSr+PiHtOR5P3psxZ4dhvX519SVbdejHp+ly3LpazvdPMTrOjZnOtWS3+3xHPf+HsutqR2XMsxtstyN63OP27s9jvNlGayPenxVrttYi8uX9LwPtx4/vF+3Hs9x792vx3mprXbTEPptrTW3H6G8u1+/9Fgfdd761OMcXEDeWjDLrTwfS8attHTiO+eZe4/nuCZd1vjGeaafxtdz+7Yvx2k7LVN+PM889jhMXeqnLaXrqkc9hjgeHfV7F1pwt72kI5309v2ee4/nuJf+5sf7PbHk0JRLDKWlGdf9KZf8eL/nscewTLdtafv2GvT4XwDrI+gRPYIecZ4BPeLtM6BH9Ah6RI+gR9AjegQ9okfQI3oEPaJH0CN6BD2CHtEj6BE9gh7RI+gRPYIe0SPoET2CHkGP6BH0iB5Bj+gR9IgeQY/oEfQIekSPoEf0CD+uR9AjegQ9gh7RI+gRPYIe0SPoET2CHtEj6BE9zuHTQI/oEfQIekSPoEf0CHpEj6BH9Ah6xPv3gB7R4zWAHkGP6BH0iB5Bj+gR9IgeQY/oEfQIekSPoEf0CHpEj6BH9Ah6RI+gR9AjegQ9okfQI3oEPaJH0CN6BD2iR9Aj6BE9gh7RI+gRPYIe0SPoET2CHkGP6BH0iB5Bj+gR9IgeQY/oEX5Vj1v4faDHKXw+0CN6BOcZ9HgJnwHs11gfwfUj6BE9gh7RI+gRPYIe0SPoET2CHtHj7wP+B0BsTWs77F6pAAAAAElFTkSuQmCC)
+
+## Design-time data context[​](#design-time-data-context "Direct link to Design-time data context")
+
+You may have noticed, after you first compiled this project, that the preview pane also shows the greeting.
+
+![Design-time preview showing bound data context values](data:image/png;base64,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)
+
+Avalonia can also set a data context for a control for use at design-time. This is useful because the preview pane can show realistic data while you adjust layout and styles.
+
+You can see the design-time data context being set in the XAML:
+
+```xml
+<Design.DataContext>
+    <vm:MainWindowViewModel/>
+</Design.DataContext>
+
+```
+
+tip
+
+For a more detailed guide about using the design-time data context, see [XAML preview and design settings](/docs/app-development/xaml-preview-and-design-settings.md).
+
+info
+
+Further discussion of data binding requires a background in the MVVM pattern. For an introduction to the concepts of the MVVM pattern, see [The MVVM pattern](/docs/fundamentals/the-mvvm-pattern.md).
+
+## See also[​](#see-also "Direct link to See also")
+
+* [Introduction to data binding](/docs/data-binding/introduction-to-data-binding.md): Data binding overview.
+* [Data binding syntax](/docs/data-binding/data-binding-syntax.md): Binding paths, modes, and converters.
+* [XAML preview and design settings](/docs/app-development/xaml-preview-and-design-settings.md): Design-time data context configuration.

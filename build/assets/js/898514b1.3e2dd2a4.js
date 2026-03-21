@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkavalonia_docs=self.webpackChunkavalonia_docs||[]).push([[79067],{19187:a=>{a.exports=JSON.parse('{"tags":[{"label":"accelerate","permalink":"/docs/tags/accelerate","count":3},{"label":"xpf","permalink":"/docs/tags/xpf","count":1}]}')}}]);

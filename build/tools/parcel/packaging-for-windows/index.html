@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-tools docs-version-current docs-doc-page docs-doc-id-parcel/packaging-for-windows" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Packaging apps for Windows | Avalonia Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.avaloniaui.net/img/social-card.png"><meta data-rh="true" name="twitter:image" content="https://docs.avaloniaui.net/img/social-card.png"><meta data-rh="true" property="og:url" content="https://docs.avaloniaui.net/tools/parcel/packaging-for-windows"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-tools-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-tools-current"><meta data-rh="true" property="og:title" content="Packaging apps for Windows | Avalonia Docs"><meta data-rh="true" name="description" content="Accelerate"><meta data-rh="true" property="og:description" content="Accelerate"><link data-rh="true" rel="canonical" href="https://docs.avaloniaui.net/tools/parcel/packaging-for-windows"><link data-rh="true" rel="alternate" href="https://docs.avaloniaui.net/tools/parcel/packaging-for-windows" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.avaloniaui.net/tools/parcel/packaging-for-windows" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://V9UF6750GH-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Avalonia Docs" href="/opensearch.xml">
+
+
+<script>function getCookie(e){const t=`; ${document.cookie}`.split(`; ${e}=`);return 2===t.length?t.pop().split(";").shift():null}!function(){var e=window.analytics=window.analytics||[];if(!e.initialize)if(e.invoked)window.console&&console.error&&console.error("Snippet included twice.");else{e.invoked=!0,e.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"],e.factory=function(t){return function(){var n=Array.prototype.slice.call(arguments);return n.unshift(t),e.push(n),e}};for(var t=0;t<e.methods.length;t++){var n=e.methods[t];e[n]=e.factory(n)}e.load=function(t,n){var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src="https://cdp-eu.customer.io/v1/analytics-js/snippet/"+t+"/analytics.min.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(o,i),e._writeKey=t,e._loadOptions=n},e.SNIPPET_VERSION="4.15.3",e.load("4fe6898c1dcf35b4fb67"),e.page()}}(),document.addEventListener("DOMContentLoaded",(function(){const e=getCookie("user_id");e&&analytics.identify(e,{})}))</script>
+
+
+<link rel="preconnect" href="https://www.clarity.ms">
+<script>!function(t,e,n,c,a,r,s){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(r=e.createElement(c)).async=1,r.src="https://www.clarity.ms/tag/hqhy3ac3l1",(s=e.getElementsByTagName(c)[0]).parentNode.insertBefore(r,s)}(window,document,"clarity","script")</script>
+
+
+
+
+<script defer="defer" data-domain="docs.avaloniaui.net" src="https://plausible.io/js/script.js"></script>
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" color="#ffffff" href="/favicons/safari-pinned-tab.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<script src="https://white-hill-09a5c3303.3.azurestaticapps.net/AvaloniaPreviewElement.js" type="module" async></script><link rel="stylesheet" href="/assets/css/styles.87e48ef3.css">
+<script src="/assets/js/runtime~main.c643600d.js" defer="defer"></script>
+<script src="/assets/js/main.6f0f48c5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_CIJY"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><a target="_self" href="/"><img src="/logo/docs-logo-light.svg" alt="Avalonia Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="28" width="139"><img src="/logo/docs-logo-dark.svg" alt="Avalonia Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="28" width="139"></a><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/tools/">Avalonia Tools</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/tools/ide/">IDE</a><button aria-label="Expand sidebar category &#x27;IDE&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/tools/developer-tools/installation">Dev Tools</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/tools/parcel/setup">Parcel</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/tools/parcel/setup">Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/tools/parcel/command-line-reference">Command line reference</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/tools/parcel/packaging-for-macos">macOS</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/tools/parcel/packaging-for-windows">Windows</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/tools/parcel/packaging-for-linux">Linux</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/tools/ai-tools/">AI Tools</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/tools/installing-accelerate">Installing Avalonia Accelerate</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/tools/community-edition">Community edition</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/tools/faq">FAQ</a></li></ul></nav></div></div></aside><div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/"><div class="navbar__logo"><img src="/logo/docs-logo-light.svg" alt="Avalonia Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="28" width="139"><img src="/logo/docs-logo-dark.svg" alt="Avalonia Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="28" width="139"></div></a><a class="navbar__item navbar__link" href="/docs/welcome">Guides</a><a class="navbar__item navbar__link" href="/controls">Controls</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/tools">Tools</a><a class="navbar__item navbar__link" href="/api">APIs</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link navbar__link--community">More</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/troubleshooting">Troubleshooting</a></li><li><a href="https://avaloniaui.net/support?utm_source=docs&amp;utm_medium=referral&amp;utm_content=nav_link" target="_blank" class="dropdown__link">Enhanced Support<svg width="12" height="12" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://avaloniaui.net/services" target="_blank" class="dropdown__link">Professional Services<svg width="12" height="12" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://github.com/AvaloniaUI/Avalonia/discussions" target="_blank" class="dropdown__link">GitHub Discussions<svg width="12" height="12" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://avaloniaui.net/blog" target="_blank" class="dropdown__link">Blog<svg width="12" height="12" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="navbar__item"><div class="separator" aria-hidden></div></div><a class="navbar__item navbar__link" href="/xpf">Avalonia XPF</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="DocSearch-SearchBar"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button><button class="DocSearch-SidepanelButton inline" type="button" aria-label="Ask AI (Meta+i)" aria-keyshortcuts="Meta+i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg></button></div></div><div class="colorModeToggle_x44X"><button type="button" disabled="" title="Switch to dark mode" aria-label="Switch to dark mode" style="display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;border:none;background:none;cursor:pointer;padding:0;color:var(--color-gray-400)"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><a href="https://github.com/avaloniaui/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Packaging apps for Windows</h1></header><style>
+    .pill-link:hover {
+      opacity: 0.8;
+    }
+  </style><a href="/tools" style="display:inline-flex;align-items:center;border-radius:999px;font-weight:500;white-space:nowrap;border:none;text-decoration:none;transition:opacity 0.2s ease;letter-spacing:0.01em;background-color:#85b6ff;color:#1b3a5c;padding:0.3rem 0.875rem;font-size:0.875rem;cursor:pointer" class="pill-link" target="_blank" rel="noopener noreferrer">Accelerate</a>
+<br>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="packaging">Packaging<a href="#packaging" class="hash-link" aria-label="Direct link to Packaging" title="Direct link to Packaging">​</a></h2>
+<p>Parcel creates Windows installers (NSIS executable) and portable executables that can be distributed via setup files or ZIP archives. The tool handles executable configuration, registry entries, and can create Windows packages on all supported platforms.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="package-configuration">Package Configuration<a href="#package-configuration" class="hash-link" aria-label="Direct link to Package Configuration" title="Direct link to Package Configuration">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="common-properties">Common Properties<a href="#common-properties" class="hash-link" aria-label="Direct link to Common Properties" title="Direct link to Common Properties">​</a></h4>
+<p><strong>Application Name</strong>:</p>
+<p>Display name used for the application install directory, Start Menu entry, and shortcut file name.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Currently cannot be localized.</p></div></div>
+<p><strong>Package Name</strong>:</p>
+<p>The output installer file name (without extension).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nsis-installer-properties">NSIS Installer Properties<a href="#nsis-installer-properties" class="hash-link" aria-label="Direct link to NSIS Installer Properties" title="Direct link to NSIS Installer Properties">​</a></h3>
+<p>Parcel uses NSIS (Nullsoft Scriptable Install System) that creates lightweight, self-extracting installers with flexible installation options.</p>
+<p><strong>Company</strong>:</p>
+<p>The publisher name displayed in Windows properties, installers, and system dialogs. This name is used to organize applications in Program Files and registry entries when <strong>Create Company Folder</strong> is enabled.</p>
+<p><strong>Create Company Folder</strong>:</p>
+<p>When enabled, the application will be installed in a company-specific subdirectory:</p>
+<ul>
+<li>Admin install: <code>Program Files\[Company]\[Application Name]\</code></li>
+<li>User install: <code>%LocalAppData%\[Company]\[Application Name]\</code></li>
+</ul>
+<p>This also affects the Start Menu shortcut location, organizing shortcuts under <code>Start Menu\Programs\[Company]\[Application Name]</code>.</p>
+<p>Default: false.</p>
+<p><strong>Installer Icon</strong>:</p>
+<p>The installer icon in <strong>ICO</strong> or <strong>SVG</strong> format. ICO files should include multiple resolutions from 16x16 to 256x256 pixels. This icon appears in Windows Explorer for the installer executable, during installation, and in the Windows uninstaller list.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>This is separate from the application icon.</p><p>Application icon is defined by the standard .NET <code>&lt;ApplicationIcon&gt;file.ico&lt;/ApplicationIcon&gt;</code> property in the .csproj file.</p></div></div>
+<p><strong>Requires Admin</strong>:</p>
+<p>Controls whether the installer requires administrator privileges for installation.</p>
+<p>When enabled (default), the application is installed to <code>Program Files</code> and requires User Account Control (UAC) elevation. When disabled, the application is installed to the current user&#x27;s <code>%LocalAppData%</code> directory without requiring elevation.</p>
+<p>Default: true.</p>
+<p><strong>Include Uninstaller</strong>:</p>
+<p>When enabled, Parcel includes an uninstaller executable with the application and creates an entry in Windows Settings &gt; Apps &amp; Features (or Control Panel &gt; Programs and Features on older Windows versions).</p>
+<p>Default: true.</p>
+<p><strong>License File</strong>:</p>
+<p>Optional license file to be displayed during installation. Supported formats:</p>
+<ul>
+<li>Plain text (.txt)</li>
+<li>Rich Text Format (.rtf)</li>
+</ul>
+<p>The license is displayed on a dedicated page during installation, and users must accept it to proceed.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="code-signing">Code Signing<a href="#code-signing" class="hash-link" aria-label="Direct link to Code Signing" title="Direct link to Code Signing">​</a></h2>
+<p>Parcel signs Windows executables and installers using Authenticode certificates. Cross-platform signing is supported on Windows, Linux, and macOS platforms.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>This document explains how to integrate various signing methods with Parcel. It does not include detailed setup steps for obtaining certificates or configuring cloud signing services. Please refer to the linked documentation for each method for complete setup instructions.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h3>
+<p>Before signing Windows applications, ensure you have:</p>
+<ul>
+<li><strong>Code Signing Certificate</strong>: Valid Authenticode certificate from a trusted Certificate Authority</li>
+<li><strong>Windows SDK</strong> (Windows only): Can be installed with Visual Studio Build Tools (on CI) or Visual Studio (on Desktop) from <a href="https://visualstudio.microsoft.com/downloads/" target="_blank" rel="noopener noreferrer">Visual Studio Downloads</a></li>
+<li><strong>Java Runtime</strong>: Required for cross-platform signing operations.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="signing-methods">Signing Methods<a href="#signing-methods" class="hash-link" aria-label="Direct link to Signing Methods" title="Direct link to Signing Methods">​</a></h3>
+<p>Parcel supports multiple certificate formats depending on your development environment and workflow.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="local-certificate">Local Certificate<a href="#local-certificate" class="hash-link" aria-label="Direct link to Local Certificate" title="Direct link to Local Certificate">​</a></h4>
+<p>Use a local certificate file (PFX/P12 format) for signing. This method is not recommended for production applications, and is typically untrusted by Windows.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>Local Signing Certificate File</strong>: Path to PFX or P12 certificate file</li>
+<li><strong>Local Signing Certificate Password</strong>: Password protecting the certificate file</li>
+<li><strong>Timestamp Server URL</strong> (optional): URL of timestamp authority server (e.g., <code>http://timestamp.digicert.com</code>)</li>
+</ul>
+<p><strong>Platform Support:</strong></p>
+<ul>
+<li><strong>Windows</strong>: Uses native SignTool when available, JSign otherwise</li>
+<li><strong>Linux/macOS</strong>: Uses <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a> (requires Java Runtime)</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps" target="_blank" rel="noopener noreferrer">New-SelfSignedCertificate</a></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="windows-certificate-store">Windows Certificate Store<a href="#windows-certificate-store" class="hash-link" aria-label="Direct link to Windows Certificate Store" title="Direct link to Windows Certificate Store">​</a></h4>
+<p>Use certificates installed in the Windows Certificate Store, including hardware security modules (HSMs) and USB tokens.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>Store Certificate Name</strong>: Subject name or thumbprint of the certificate</li>
+<li><strong>Use Local Machine Certificate Store</strong> (optional): Search in Local Machine store instead of Current User</li>
+<li><strong>Auto-Detect Matching Certificate</strong> (optional): Automatically select the best matching certificate</li>
+</ul>
+<p><strong>Platform Support:</strong></p>
+<ul>
+<li><strong>Windows only</strong>: Requires Windows SDK (SignTool)</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/install/certificate-stores" target="_blank" rel="noopener noreferrer">Windows Certificate Store Overview</a></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="microsoft-trusted-signing-cross-platform">Microsoft Trusted Signing (Cross-Platform)<a href="#microsoft-trusted-signing-cross-platform" class="hash-link" aria-label="Direct link to Microsoft Trusted Signing (Cross-Platform)" title="Direct link to Microsoft Trusted Signing (Cross-Platform)">​</a></h4>
+<p>Cloud-based signing service that provides the highest trust level without managing local certificates. Provides immediate SmartScreen bypass and enhanced security through hardware security modules (HSMs).</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>Trusted Signing Endpoint</strong>: Azure Trusted Signing service endpoint URL (format: <code>https://[region].codesigning.azure.net/</code>)</li>
+<li><strong>Certificate Profile Name</strong>: Name of the certificate profile in Azure Trusted Signing</li>
+<li><strong>Code Signing Account Name</strong>: Azure Trusted Signing account name</li>
+</ul>
+<p><strong>Authentication:</strong>
+Azure CLI authentication or environment variables:</p>
+<ul>
+<li><code>AZURE_TENANT_ID</code>: Azure Active Directory tenant ID</li>
+<li><code>AZURE_CLIENT_ID</code>: Service principal client ID</li>
+<li><code>AZURE_CLIENT_SECRET</code>: Service principal client secret</li>
+</ul>
+<p><strong>Required Azure Role</strong>: &quot;Code Signing Certificate Profile Signer&quot;</p>
+<p><strong>Platform Support:</strong></p>
+<ul>
+<li><strong>Windows</strong>: Uses native SignTool when available, JSign otherwise</li>
+<li><strong>Linux/macOS</strong>: Uses <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a> (requires Java Runtime)</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.70186 12.0001C3.70186 7.41711 7.41711 3.70186 12.0001 3.70186C16.5831 3.70186 20.2984 7.41711 20.2984 12.0001C20.2984 16.5831 16.5831 20.2984 12.0001 20.2984C7.41711 20.2984 3.70186 16.5831 3.70186 12.0001ZM12.0001 1.90186C6.423 1.90186 1.90186 6.423 1.90186 12.0001C1.90186 17.5772 6.423 22.0984 12.0001 22.0984C17.5772 22.0984 22.0984 17.5772 22.0984 12.0001C22.0984 6.423 17.5772 1.90186 12.0001 1.90186ZM15.6197 10.7395C15.9712 10.388 15.9712 9.81819 15.6197 9.46672C15.2683 9.11525 14.6984 9.11525 14.347 9.46672L11.1894 12.6243L9.6533 11.0883C9.30183 10.7368 8.73198 10.7368 8.38051 11.0883C8.02904 11.4397 8.02904 12.0096 8.38051 12.3611L10.553 14.5335C10.7217 14.7023 10.9507 14.7971 11.1894 14.7971C11.428 14.7971 11.657 14.7023 11.8257 14.5335L15.6197 10.7395Z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Microsoft Trusted Signing is the recommended solution for enterprises requiring immediate trust without building reputation over time.</p></div></div>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/trusted-signing/" target="_blank" rel="noopener noreferrer">Microsoft Trusted Signing Documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/trusted-signing/quickstart" target="_blank" rel="noopener noreferrer">Trusted Signing Quickstart</a></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="azure-key-vault">Azure Key Vault<a href="#azure-key-vault" class="hash-link" aria-label="Direct link to Azure Key Vault" title="Direct link to Azure Key Vault">​</a></h4>
+<p>Store certificates and private keys securely in Azure Key Vault for centralized certificate management and access control.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>Azure Key Vault Name</strong>: Name of the Azure Key Vault instance</li>
+<li><strong>Azure Key Vault Certificate Name</strong>: Name of the certificate stored in the vault</li>
+</ul>
+<p><strong>Authentication:</strong>
+Azure CLI authentication or environment variables:</p>
+<ul>
+<li><code>AZURE_TENANT_ID</code>: Azure Active Directory tenant ID</li>
+<li><code>AZURE_CLIENT_ID</code>: Service principal client ID</li>
+<li><code>AZURE_CLIENT_SECRET</code>: Service principal client secret</li>
+</ul>
+<p><strong>Required Azure Roles:</strong></p>
+<ul>
+<li>&quot;Key Vault Crypto User&quot; - for signing operations</li>
+<li>&quot;Key Vault Certificate User&quot; - for certificate access</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/key-vault/general/overview" target="_blank" rel="noopener noreferrer">Azure Key Vault Overview</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Powered by <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a>, and requires Java Runtime.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aws-kms">AWS KMS<a href="#aws-kms" class="hash-link" aria-label="Direct link to AWS KMS" title="Direct link to AWS KMS">​</a></h4>
+<p>Use AWS Key Management Service for secure private key storage with certificates managed separately.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>AWS Region Code</strong>: AWS region where the key is stored (e.g., <code>us-east-1</code>, <code>eu-west-1</code>, <code>ap-southeast-2</code>)</li>
+<li><strong>AWS Signing Certificate File</strong>: Path to the certificate file (AWS KMS stores only the private key)</li>
+<li><strong>AWS Signing Key ID or Alias</strong>: AWS KMS key identifier or alias</li>
+</ul>
+<p><strong>Authentication:</strong>
+AWS credentials from one of the following sources:</p>
+<ul>
+<li>Environment variables: <code>AWS_ACCESS_KEY_ID</code>, <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_SESSION_TOKEN</code></li>
+<li>ECS container credentials</li>
+<li>EC2 IMDSv2 service</li>
+</ul>
+<p><strong>Required IAM Permissions:</strong></p>
+<ul>
+<li><code>kms:ListKeys</code> - for key discovery</li>
+<li><code>kms:DescribeKey</code> - for key metadata</li>
+<li><code>kms:Sign</code> - for signing operations</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" target="_blank" rel="noopener noreferrer">AWS KMS Overview</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Powered by <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a>, and requires Java Runtime.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="digicert">DigiCert<a href="#digicert" class="hash-link" aria-label="Direct link to DigiCert" title="Direct link to DigiCert">​</a></h4>
+<p>Use certificates and keys stored in DigiCert ONE Secure Software Manager (formerly DigiCert KeyLocker) without installing DigiCert client tools.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>DigiCert API Key</strong>: API key for DigiCert ONE authentication (obtained from DigiCert ONE portal)</li>
+<li><strong>DigiCert Keystore</strong>: PKCS#12 keystore file containing client certificate for authentication</li>
+<li><strong>DigiCert Storepass</strong>: Password for the keystore file</li>
+<li><strong>DigiCert Certificate Name or ID</strong>: Identifier for the certificate in DigiCert ONE</li>
+<li><strong>DigiCert Host</strong> (optional): Custom host URL (defaults to <code>https://clientauth.one.digicert.com</code> for US)</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://docs.digicert.com/en/software-trust-manager.html" target="_blank" rel="noopener noreferrer">DigiCert Software Trust Manager</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Powered by <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a>, and requires Java Runtime.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="google-cloud-kms">Google Cloud KMS<a href="#google-cloud-kms" class="hash-link" aria-label="Direct link to Google Cloud KMS" title="Direct link to Google Cloud KMS">​</a></h4>
+<p>Use Google Cloud Key Management Service for secure private key storage. The certificate must be provided separately as Google Cloud KMS stores only the private key.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>Google Access Token</strong>: OAuth 2.0 access token for authentication</li>
+<li><strong>Google Signing Keyring</strong>: Full path to the keyring in format: <code>projects/[PROJECT]/locations/[LOCATION]/keyRings/[KEYRING]/cryptoKeys/[KEY]</code></li>
+<li><strong>Google Signing Certificate File</strong>: Path to the certificate file</li>
+<li><strong>Google Signing Certificate Version</strong> (optional): Specific version of the key (uses most recent if omitted)</li>
+</ul>
+<p><strong>Required IAM Permissions:</strong></p>
+<ul>
+<li><code>cloudkms.cryptoKeyVersions.useToSign</code> - for signing operations</li>
+<li><code>cloudkms.cryptoKeyVersions.list</code> - required if version isn&#x27;t specified</li>
+<li><code>cloudkms.cryptoKeys.list</code> - for key discovery</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://cloud.google.com/kms/docs" target="_blank" rel="noopener noreferrer">Google Cloud KMS Overview</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Powered by <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a>, and requires Java Runtime.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sslcom-esigner">SSL.com eSigner<a href="#sslcom-esigner" class="hash-link" aria-label="Direct link to SSL.com eSigner" title="Direct link to SSL.com eSigner">​</a></h4>
+<p>Cloud-based signing service from SSL.com with hardware security module (HSM) backed certificates and optional sandbox environment for testing.</p>
+<p><strong>Required Configuration:</strong></p>
+<ul>
+<li><strong>eSigner User Name</strong>: SSL.com account username</li>
+<li><strong>eSigner Password</strong>: SSL.com account password</li>
+<li><strong>eSigner Key Password</strong>: Base64-encoded TOTP (Time-based One-Time Password) secret for two-factor authentication</li>
+<li><strong>eSigner Credential ID</strong>: Credential identifier for the certificate (found in SSL.com dashboard)</li>
+<li><strong>eSigner Sandbox</strong> (optional): Enable sandbox environment (<code>https://cs-try.ssl.com</code>) for testing before production use</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li><a href="https://www.ssl.com/esigner/" target="_blank" rel="noopener noreferrer">SSL.com eSigner</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.862 3.487a2.75 2.75 0 0 1 3.889 0l.762.762a2.75 2.75 0 0 1 0 3.889L9.238 20.413a2.75 2.75 0 0 1-1.293.729l-4.473 1.193a.75.75 0 0 1-.92-.92l1.193-4.473a2.75 2.75 0 0 1 .729-1.293L16.862 3.487zm2.828 1.06a1.25 1.25 0 0 0-1.768 0L5.647 16.823a1.25 1.25 0 0 0-.331.588l-.829 3.108 3.108-.829a1.25 1.25 0 0 0 .588-.331L20.458 7.084a1.25 1.25 0 0 0 0-1.768l-.762-.762-.006-.006z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Powered by <a href="https://github.com/ebourg/jsign" target="_blank" rel="noopener noreferrer">JSign</a>, and requires Java Runtime.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See also<a href="#see-also" class="hash-link" aria-label="Direct link to See also" title="Direct link to See also">​</a></h2>
+<ul>
+<li><a href="/tools/parcel/setup">Parcel setup</a></li>
+<li><a href="/tools/parcel/command-line-reference">Parcel command line reference</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/tools/tags/accelerate">accelerate</a></li></ul></div></div></footer><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/tools/parcel/packaging-for-macos"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">macOS</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/tools/parcel/packaging-for-linux"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Linux</div></a></nav></article></div></div><div class="col col--3"><div class="tableOfContentsWrapper_cC_z"><div class="flex items-center justify-between mb-4 max-[1359px]:flex-col max-[1359px]:items-start max-[1359px]:gap-3"><h3 class="m-0 max-[1359px]:mr-0 mr-4 uppercase" style="font-size:13px;font-weight:600;letter-spacing:0.08em;color:var(--color-muted)">On this page</h3><div class="relative inline-block max-[1359px]:w-full"><button class="dropdown-toggle tocDropdownButton_BGOJ">Open in<svg class="duration-200 ease-in-out stroke-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.79199 7.396L10.0003 12.6043L15.2087 7.396" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div></div><div class="tableOfContents_jeP5 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#packaging" class="table-of-contents__link toc-highlight">Packaging</a><ul><li><a href="#package-configuration" class="table-of-contents__link toc-highlight">Package Configuration</a></li><li><a href="#nsis-installer-properties" class="table-of-contents__link toc-highlight">NSIS Installer Properties</a></li></ul></li><li><a href="#code-signing" class="table-of-contents__link toc-highlight">Code Signing</a><ul><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#signing-methods" class="table-of-contents__link toc-highlight">Signing Methods</a></li></ul></li><li><a href="#see-also" class="table-of-contents__link toc-highlight">See also</a></li></ul></div></div></div></div></div></main></div></div></div></div></div>
+</body>
+</html>

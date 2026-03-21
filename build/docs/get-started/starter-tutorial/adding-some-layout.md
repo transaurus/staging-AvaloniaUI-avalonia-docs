@@ -1,0 +1,144 @@
+# Adding some layout
+
+At this point, your temperature converter app has a single button in the center of the window. You cannot add any more elements, because each Avalonia window allows only one control in its content zone. (More on layout zones later, on the next page: [Customizing the Avalonia window](/docs/get-started/starter-tutorial/customizing-the-avalonia-window.md).)
+
+To place multiple UI elements in the window, you must use a **layout control.**
+
+For more information on layout controls, see [Layout controls](/controls.md).
+
+## Inserting a stack panel[​](#inserting-a-stack-panel "Direct link to Inserting a stack panel")
+
+You can use the `StackPanel` layout control to place some text above the button.
+
+1. In the file **MainWindow\.axaml**, enclose your `Button` with a `<StackPanel>...</StackPanel>` tag.
+
+```xml
+<StackPanel>
+	<Button>Calculate</Button>
+</StackPanel>
+
+```
+
+2. Add a [`TextBlock`](/api/avalonia/controls/textblock.md) above the Button. (You may recall the `TextBlock` tag from the default **MainWindow\.axaml**, which prints text in the window.) Set the attributes of the `TextBlock` as follows:
+
+* `Margin="5"`
+* `FontSize="24"`
+* `HorizontalAlignment="Center"`
+* `Text="Temperature Converter"`
+
+```xml
+<StackPanel>
+    <TextBlock Margin="5"
+               FontSize="24" 
+               HorizontalAlignment="Center"
+               Text="Temperature Converter">
+    </TextBlock>
+
+    <Button HorizontalAlignment="Center">Calculate</Button>
+</StackPanel>
+
+```
+
+3. Run the app or check the previewer. You should see the text “Temperature Converter” positioned above the **Calculate** button.
+
+![A screenshot showing a work-in-progress app, with text above a button.](/assets/images/temperature-converter-text-only-47a9bf06b79989bd4368fdf55460d9d4.png)
+
+4. Enclose the `TextBlock` with a `<Border>...</Border>` tag. Set the attributes of the `Border` as follows:
+
+* `Margin="5"`
+* `CornerRadius="10"`
+* `Background="LightBlue"`
+
+```xml
+<StackPanel>
+    <Border Margin="5" CornerRadius="10" Background="LightBlue">
+        <TextBlock Margin="5"
+                   FontSize="24" 
+                   HorizontalAlignment="Center"
+                   Text="Temperature Converter">
+        </TextBlock>
+    </Border>
+
+    <Button HorizontalAlignment="Center">Calculate</Button>
+</StackPanel>
+
+```
+
+5. Run the app or check the previewer. You should see that the text “Temperature Converter” is now inside a rounded blue box.
+
+![A screenshot showing a work-in-progress app, with text enclosed inside a blue border above a button.](/assets/images/temperature-converter-blue-border-85016c962da4c300f410b2bb07adc855.png)
+
+note
+
+By default, `StackPanel` arranges elements in a vertical stack. You can change this to horizontal by setting the `Orientation` attribute to `Horizontal`.
+
+## Inserting a grid[​](#inserting-a-grid "Direct link to Inserting a grid")
+
+Next, add a [`Grid`](/api/avalonia/controls/grid.md) layout control to the temperature converter app. `Grid` creates cells in rows and columns, into which you can place more controls.
+
+1. Stop the app if it is still running.
+2. In the file **MainWindow\.axaml**, insert a `<Grid>...</Grid>` tag between `</Border>` and `<Button>`.
+
+```xml
+<StackPanel>
+    <Border Margin="5" CornerRadius="10" Background="LightBlue">
+        <TextBlock Margin="5"
+            HorizontalAlignment="Center"
+            FontSize="24"
+            Text="Temperature Converter">
+        </TextBlock>
+    </Border>
+    <Grid ShowGridLines="True" Margin="5" 
+          ColumnDefinitions="120, 100"
+          RowDefinitions="Auto, Auto">
+    </Grid>
+    <Button HorizontalAlignment="Center">Calculate</Button>
+</StackPanel>
+
+```
+
+We have specified some attributes for the `Grid`:
+
+* It has two columns and two rows.
+* Gridlines are visible.
+* Cell height automatically scales to match the content. Because the automatic height of an empty cell is zero, the `Grid` currently appears on your previewer as a horizontal straight line.
+
+![A screenshot showing a work-in-progress app, with a title, a dotted line, and a button.](/assets/images/temperature-converter-empty-grid-aeb17bff021cec2752962e88e448a48b.png)
+
+## Inserting controls in the grid[​](#inserting-controls-in-the-grid "Direct link to Inserting controls in the grid")
+
+1. Insert `TextBlock` controls in the left cells of the grid, using the `Grid.Row` and `Grid.Column` attributes to assign the target cells. Use these text blocks to fill the cells with the text “Celsius” and “Fahrenheit”.
+
+note
+
+The first cell in a row or column of a `Grid` is numbered 0.
+
+```xml
+        <Grid ShowGridLines="True" Margin="5" 
+              ColumnDefinitions="120, 100"
+              RowDefinitions="Auto, Auto">
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="10">Celsius</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</TextBlock>
+        </Grid>
+
+```
+
+2. Insert `TextBox` controls in the right cells of the grid, again using the `Grid.Row` and `Grid.Column` attributes to assign the target cells. `TextBox` is a control that creates an area for keyboard input.
+
+```xml
+        <Grid ShowGridLines="True" Margin="5" 
+              ColumnDefinitions="120, 100"
+              RowDefinitions="Auto, Auto">
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="10">Celsius</TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="0 5" Text="0"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</TextBlock>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="0 5" Text="0"/>
+        </Grid>
+
+```
+
+3. Run the app or check the previewer. You should see your text and input boxes added to the window, within the cells marked by the gridlines.
+
+![A screenshot showing a work-in-progress app, with a title, input boxes in a grid, and a button.](/assets/images/temperature-converter-filled-grid-8b9aa9fda86ac3ba2f2a4c8bef3244a7.png)
+
+On the next page of this tutorial, you will learn how to adjust the size of the app window.

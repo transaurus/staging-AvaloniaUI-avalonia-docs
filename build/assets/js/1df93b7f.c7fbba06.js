@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkavalonia_docs=self.webpackChunkavalonia_docs||[]).push([[34583],{36866:(a,e,s)=>{s.r(e),s.d(e,{default:()=>n});var c=s(56347),o=s(74848);function n(){return(0,o.jsx)(c.rd,{to:"/docs/welcome"})}}}]);

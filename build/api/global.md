@@ -1,0 +1,32 @@
+# global Namespace
+
+Namespace `global`
+
+## Types[​](#types "Direct link to Types")
+
+* [LinuxFramebufferPlatformExtensions](/api/global/linuxframebufferplatformextensions.md)
+* [mz.ScriptResultCommand](/api/global/mz-scriptresultcommand.md)
+* [mz.a](/api/global/mz-a.md)
+* [mz.b](/api/global/mz-b.md)
+* [na.a](/api/global/na-a.md)
+* [nh.a](/api/global/nh-a.md)
+* [nr.a](/api/global/nr-a.md)
+* [nr.b](/api/global/nr-b.md)
+* [nr.c](/api/global/nr-c.md)
+* [nr.d](/api/global/nr-d.md)
+* [nr.e](/api/global/nr-e.md)
+* [nr.f](/api/global/nr-f.md)
+* [r\<c, d>.b\<c, d>](/api/global/r-2-b.md)
+* [r\<c, d>.c\<c, d>](/api/global/r-2-c.md)
+* [tp.a](/api/global/tp-a.md)
+* [tv\<g, h>.b\<g, h>](/api/global/tv-2-b.md)
+* [tv\<g, h>.c\<g, h>](/api/global/tv-2-c.md)
+* [ua.a](/api/global/ua-a.md)
+* [uo.a](/api/global/uo-a.md)
+* [uv.a](/api/global/uv-a.md)
+* [vd.a](/api/global/vd-a.md)
+* [vg.a](/api/global/vg-a.md)
+* [wa.h](/api/global/wa-h.md)
+* [wa.i](/api/global/wa-i.md)
+* [wp.a](/api/global/wp-a.md)
+* [wp.b](/api/global/wp-b.md)
